@@ -1,1756 +1,806 @@
-<!Doctype html>
-
+<!DOCTYPE html>
 <html class="scroll-smooth" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="web_standard" name="shell-type" />
-    <title>Aparna Jewellery Works | Kochi, Kerala</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      @layer base {
-        html,
-        body {
-          margin: 0;
-          padding: 0;
-        }
-        body {
-          overscroll-behavior: none;
-        }
-        main > :first-child {
-          margin-top: 0 !important;
-        }
-        main > :last-child {
-          margin-bottom: 0 !important;
-        }
-      }
-      ::-webkit-scrollbar {
-        display: none;
-      }
-    </style>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              background: "#f2fcf5",
-              "on-error-container": "#93000a",
-              "on-primary-container": "#79a694",
-              "secondary-container": "#fed65b",
-              primary: "#00241a",
-              "error-container": "#ffdad6",
-              "outline-variant": "#c0c8c3",
-              "primary-container": "#0d3b2e",
-              "on-tertiary-fixed": "#032018",
-              "surface-dim": "#d3dcd6",
-              "on-tertiary": "#ffffff",
-              "tertiary-fixed": "#c9eadd",
-              "on-surface-variant": "#414845",
-              "on-primary-fixed-variant": "#234e40",
-              "on-tertiary-fixed-variant": "#304c43",
-              tertiary: "#05231c",
-              "surface-container": "#e6f0ea",
-              "inverse-primary": "#a3d0be",
-              "primary-fixed-dim": "#a3d0be",
-              "on-error": "#ffffff",
-              "surface-container-highest": "#dbe5df",
-              "surface-bright": "#f2fcf5",
-              outline: "#717974",
-              "on-secondary-fixed-variant": "#574500",
-              "on-surface": "#151d1a",
-              "tertiary-container": "#1d3930",
-              "tertiary-fixed-dim": "#aecdc1",
-              "on-background": "#151d1a",
-              "on-secondary": "#ffffff",
-              "surface-container-low": "#ecf6f0",
-              "secondary-fixed-dim": "#e9c349",
-              "on-tertiary-container": "#84a397",
-              surface: "#f2fcf5",
-              "surface-variant": "#dbe5df",
-              "surface-tint": "#3c6658",
-              "secondary-fixed": "#ffe088",
-              "primary-fixed": "#beedd9",
-              "on-primary-fixed": "#002117",
-              "on-primary": "#ffffff",
-              "on-secondary-fixed": "#241a00",
-              "inverse-surface": "#29322e",
-              error: "#ba1a1a",
-              secondary: "#735c00",
-              "on-secondary-container": "#745c00",
-              "surface-container-high": "#e1eae4",
-              "inverse-on-surface": "#e9f3ed",
-              "surface-container-lowest": "#ffffff",
-            },
-            borderRadius: {
-              DEFAULT: "0.25rem",
-              lg: "0.5rem",
-              xl: "0.75rem",
-              full: "9999px",
-            },
-            spacing: {
-              "space-lg": "1.5rem",
-              "space-xs": "0.25rem",
-              "space-sm": "0.5rem",
-              "gutter-mobile": "1rem",
-              margin: "3rem",
-              "margin-mobile": "1.25rem",
-              gutter: "1.5rem",
-              "space-md": "1rem",
-              "space-xl": "2.5rem",
-            },
-            fontFamily: {
-              "label-sm": ["Plus Jakarta Sans"],
-              "title-md": ["Plus Jakarta Sans"],
-              "headline-lg-mobile": ["Plus Jakarta Sans"],
-              "label-lg": ["Plus Jakarta Sans"],
-              display: ["Plus Jakarta Sans"],
-              "label-md": ["Plus Jakarta Sans"],
-              "headline-md": ["Plus Jakarta Sans"],
-              "headline-lg": ["Plus Jakarta Sans"],
-              "body-md": ["Plus Jakarta Sans"],
-              "body-lg": ["Plus Jakarta Sans"],
-              "body-sm": ["Plus Jakarta Sans"],
-              "display-mobile": ["Plus Jakarta Sans"],
-              "title-lg": ["Plus Jakarta Sans"],
-            },
-            fontSize: {
-              "label-sm": [
-                "0.6875rem",
-                {
-                  lineHeight: "0.875rem",
-                  letterSpacing: "0.05em",
-                  fontWeight: "500",
-                },
-              ],
-              "title-md": [
-                "1.125rem",
-                { lineHeight: "1.625rem", fontWeight: "500" },
-              ],
-              "headline-lg-mobile": [
-                "1.75rem",
-                {
-                  lineHeight: "2.25rem",
-                  letterSpacing: "-0.01em",
-                  fontWeight: "600",
-                },
-              ],
-              "label-lg": [
-                "0.875rem",
-                {
-                  lineHeight: "1.25rem",
-                  letterSpacing: "0.02em",
-                  fontWeight: "600",
-                },
-              ],
-              display: [
-                "3.5rem",
-                {
-                  lineHeight: "4.25rem",
-                  letterSpacing: "-0.02em",
-                  fontWeight: "700",
-                },
-              ],
-              "label-md": [
-                "0.75rem",
-                {
-                  lineHeight: "1rem",
-                  letterSpacing: "0.04em",
-                  fontWeight: "600",
-                },
-              ],
-              "headline-md": [
-                "1.5rem",
-                {
-                  lineHeight: "2rem",
-                  letterSpacing: "-0.01em",
-                  fontWeight: "600",
-                },
-              ],
-              "headline-lg": [
-                "2.25rem",
-                {
-                  lineHeight: "2.75rem",
-                  letterSpacing: "-0.015em",
-                  fontWeight: "600",
-                },
-              ],
-              "body-md": ["1rem", { lineHeight: "1.5rem", fontWeight: "400" }],
-              "body-lg": [
-                "1.125rem",
-                { lineHeight: "1.75rem", fontWeight: "400" },
-              ],
-              "body-sm": [
-                "0.875rem",
-                { lineHeight: "1.375rem", fontWeight: "400" },
-              ],
-              "display-mobile": [
-                "2.25rem",
-                {
-                  lineHeight: "2.75rem",
-                  letterSpacing: "-0.015em",
-                  fontWeight: "700",
-                },
-              ],
-              "title-lg": [
-                "1.25rem",
-                { lineHeight: "1.75rem", fontWeight: "600" },
-              ],
-            },
-          },
-        },
-      };
-    </script>
-  </head>
-  <body class="bg-surface font-body-md text-on-surface antialiased">
-    <header
-      class="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-xl shadow-[0_4px_20px_-2px_rgba(13,59,46,0.3)]"
-    >
-      <div
-        class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter h-20 flex items-center justify-between gap-space-md"
-      >
-        <div class="flex items-center gap-space-md flex-shrink-0">
-          <img
-            alt="Aparna Jewellery Works Logo"
-            class="h-12 w-auto object-contain"
-            src="IMG/LOGO.png"
-          />
-          <div class="flex flex-col">
-            <!-- <span
-              class="font-title-md text-title-md text-surface-container-lowest font-bold tracking-tight leading-none"
-              >Aparna Jewellery Works</span> -->
-            
-          </div>
+<head>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="web_standard" name="shell-type" />
+<title>Aparna Jewellery Works | Kochi, Kerala</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+<style>
+  @layer base {
+    html { scroll-padding-top: 5rem; }
+    html, body { margin: 0; padding: 0; }
+    body { overscroll-behavior: none; }
+    main > :first-child { margin-top: 0 !important; }
+    main > :last-child { margin-bottom: 0 !important; }
+  }
+  body { overflow-x: hidden; }
+  ::-webkit-scrollbar { display: none; }
+  .lang-ml, [data-en] { font-family: 'Noto Sans Malayalam', 'Plus Jakarta Sans', sans-serif !important; }
+  #mobile-menu { display: grid; grid-template-rows: 0fr; opacity: 0; visibility: hidden;
+  transition: grid-template-rows .6s cubic-bezier(.4,0,.2,1), opacity .5s ease, visibility 0s linear .6s; }
+#mobile-menu.open { grid-template-rows: 1fr; opacity: 1; visibility: visible; transition-delay: 0s; }
+
+#mobile-menu a { opacity: 0; transform: translateY(-8px);
+  transition: opacity .4s ease, transform .4s ease, background-color .2s, color .2s; }
+#mobile-menu.open a { opacity: 1; transform: none; }
+#mobile-menu.open a:nth-child(1) { transition-delay: .10s, .10s, 0s, 0s; }
+#mobile-menu.open a:nth-child(2) { transition-delay: .16s, .16s, 0s, 0s; }
+#mobile-menu.open a:nth-child(3) { transition-delay: .22s, .22s, 0s, 0s; }
+#mobile-menu.open a:nth-child(4) { transition-delay: .28s, .28s, 0s, 0s; }
+#mobile-menu.open a:nth-child(5) { transition-delay: .34s, .34s, 0s, 0s; }
+
+@media (min-width: 1024px) { #mobile-menu { display: none !important; } }
+</style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: { extend: {
+    colors: {
+      background: "#f2fcf5", "on-error-container": "#93000a", "on-primary-container": "#79a694",
+      "secondary-container": "#fed65b", primary: "#00241a", "error-container": "#ffdad6",
+      "outline-variant": "#c0c8c3", "primary-container": "#0d3b2e", "on-tertiary-fixed": "#032018",
+      "surface-dim": "#d3dcd6", "on-tertiary": "#ffffff", "tertiary-fixed": "#c9eadd",
+      "on-surface-variant": "#414845", "on-primary-fixed-variant": "#234e40",
+      "on-tertiary-fixed-variant": "#304c43", tertiary: "#05231c", "surface-container": "#e6f0ea",
+      "inverse-primary": "#a3d0be", "primary-fixed-dim": "#a3d0be", "on-error": "#ffffff",
+      "surface-container-highest": "#dbe5df", "surface-bright": "#f2fcf5", outline: "#717974",
+      "on-secondary-fixed-variant": "#574500", "on-surface": "#151d1a", "tertiary-container": "#1d3930",
+      "tertiary-fixed-dim": "#aecdc1", "on-background": "#151d1a", "on-secondary": "#ffffff",
+      "surface-container-low": "#ecf6f0", "secondary-fixed-dim": "#e9c349", "on-tertiary-container": "#84a397",
+      surface: "#f2fcf5", "surface-variant": "#dbe5df", "surface-tint": "#3c6658", "secondary-fixed": "#ffe088",
+      "primary-fixed": "#beedd9", "on-primary-fixed": "#002117", "on-primary": "#ffffff",
+      "on-secondary-fixed": "#241a00", "inverse-surface": "#29322e", error: "#ba1a1a", secondary: "#735c00",
+      "on-secondary-container": "#745c00", "surface-container-high": "#e1eae4", "inverse-on-surface": "#e9f3ed",
+      "surface-container-lowest": "#ffffff",
+    },
+    borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+    spacing: {
+      "space-lg": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter-mobile": "1rem",
+      margin: "3rem", "margin-mobile": "1.25rem", gutter: "1.5rem", "space-md": "1rem", "space-xl": "2.5rem",
+    },
+    fontFamily: {
+      "label-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"],
+      "label-lg": ["Plus Jakarta Sans"], display: ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"],
+      "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"],
+      "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"],
+      "title-lg": ["Plus Jakarta Sans"],
+    },
+    fontSize: {
+      "label-sm": ["0.6875rem", { lineHeight: "0.875rem", letterSpacing: "0.05em", fontWeight: "500" }],
+      "title-md": ["1.125rem", { lineHeight: "1.625rem", fontWeight: "500" }],
+      "headline-lg-mobile": ["1.75rem", { lineHeight: "2.25rem", letterSpacing: "-0.01em", fontWeight: "600" }],
+      "label-lg": ["0.875rem", { lineHeight: "1.25rem", letterSpacing: "0.02em", fontWeight: "600" }],
+      display: ["3.5rem", { lineHeight: "4.25rem", letterSpacing: "-0.02em", fontWeight: "700" }],
+      "label-md": ["0.75rem", { lineHeight: "1rem", letterSpacing: "0.04em", fontWeight: "600" }],
+      "headline-md": ["1.5rem", { lineHeight: "2rem", letterSpacing: "-0.01em", fontWeight: "600" }],
+      "headline-lg": ["2.25rem", { lineHeight: "2.75rem", letterSpacing: "-0.015em", fontWeight: "600" }],
+      "body-md": ["1rem", { lineHeight: "1.5rem", fontWeight: "400" }],
+      "body-lg": ["1.125rem", { lineHeight: "1.75rem", fontWeight: "400" }],
+      "body-sm": ["0.875rem", { lineHeight: "1.375rem", fontWeight: "400" }],
+      "display-mobile": ["2.25rem", { lineHeight: "2.75rem", letterSpacing: "-0.015em", fontWeight: "700" }],
+      "title-lg": ["1.25rem", { lineHeight: "1.75rem", fontWeight: "600" }],
+    },
+  } },
+};
+</script>
+</head>
+<body class="bg-yellow-50 font-body-md text-on-surface antialiased">
+<header class="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-xl shadow-[0_4px_20px_-2px_rgba(13,59,46,0.3)]">
+  <div class=" mx-auto px-gutter-mobile lg:px-gutter h-20 flex items-center justify-between gap-space-md">
+    <div class="flex items-center gap-space-md flex-shrink-0">
+      <img alt="Aparna Jewellery Works Logo" class="h-10 sm:h-12 w-auto object-contain" src="IMG/LOGO.png" />
+    </div>
+    <nav class="hidden lg:flex items-center gap-space-lg">
+  <a class="font-label-lg text-label-lg text-surface-container-highest hover:text-surface-container-lowest transition-colors" href="#">Home</a>
+  <a class="font-label-lg text-label-lg text-surface-container-highest hover:text-surface-container-lowest transition-colors" href="#services-section">Services</a>
+  <a class="font-label-lg text-label-lg text-surface-container-highest hover:text-surface-container-lowest transition-colors" href="#why-us">Why Us</a>
+  <a class="font-label-lg text-label-lg text-surface-container-highest hover:text-surface-container-lowest transition-colors" href="#rates">Rates</a>
+  <a class="font-label-lg text-label-lg text-surface-container-highest hover:text-surface-container-lowest transition-colors" href="#contact">Contact</a>
+</nav>
+    <div class="flex items-center gap-space-sm">
+      <!-- Language toggle (works on mobile too) -->
+      <div class="flex items-center bg-primary-container p-1 rounded-full shadow-inner">
+        <button id="lang-btn-en" onclick="setLanguage('en')" type="button" class="px-3 py-1 rounded-full bg-secondary text-surface-container-lowest font-label-md text-label-md transition-all shadow-sm">EN</button>
+        <button id="lang-btn-ml" onclick="setLanguage('ml')" type="button" class="px-3 py-1 rounded-full text-surface-container-highest hover:text-surface-container-lowest font-label-md text-label-md transition-all">മല</button>
+      </div>
+      <a class="flex items-center gap-space-xs bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container px-3 sm:px-space-md py-2.5 rounded-full transition-all shadow-[0_0_16px_rgba(254,214,91,0.25)] hover:shadow-[0_0_20px_rgba(254,214,91,0.45)]" href="tel:+919846052707">
+        <span class="material-symbols-outlined text-[18px]">call</span>
+        <span class="font-label-md text-label-md tracking-wide hidden md:inline">Call Now (+91 9846052707)</span>
+        <!-- <span class="font-label-md text-label-md md:hidden">Call</span> -->
+      </a>
+      <button id="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"
+        class="lg:hidden flex items-center justify-center w-10 h-10 rounded-full bg-primary-container text-surface-container-lowest hover:bg-tertiary-container transition-colors">
+        <span id="menu-icon" class="material-symbols-outlined text-[24px]">menu</span>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="bg-primary border-t border-primary-container shadow-xl">
+  <nav class="overflow-hidden min-h-0">
+    <div class="flex flex-col px-gutter-mobile py-space-md gap-1">
+      <a class="block px-4 py-3 rounded-xl font-label-lg text-label-lg text-surface-container-highest hover:bg-primary-container transition-colors" href="#">Home</a>
+      <a class="block px-4 py-3 rounded-xl font-label-lg text-label-lg text-surface-container-highest hover:bg-primary-container transition-colors" href="#services-section">Services</a>
+      <a class="block px-4 py-3 rounded-xl font-label-lg text-label-lg text-surface-container-highest hover:bg-primary-container transition-colors" href="#why-us">Why Us</a>
+      <a class="block px-4 py-3 rounded-xl font-label-lg text-label-lg text-surface-container-highest hover:bg-primary-container transition-colors" href="#rates">Rates</a>
+      <a class="block px-4 py-3 rounded-xl font-label-lg text-label-lg text-surface-container-highest hover:bg-primary-container transition-colors" href="#contact">Contact</a>
+    </div>
+  </nav>
+</div>
+</header>
+
+<main class="w-full pt-20 bg-surface">
+<div class="flex flex-col w-full">
+
+<!-- Hero -->
+<section class="relative w-full overflow-hidden bg-gradient-to-b from-surface-container-low via-surface to-surface-container-low py-space-xl lg:py-28 px-gutter-mobile lg:px-gutter">
+  <div class="max-w-8xl lg:px-10 grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+    <div class="lg:col-span-7 flex flex-col items-start gap-space-md z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-container text-secondary-fixed shadow-sm">
+        <span class="material-symbols-outlined text-[18px]">verified</span>
+        <span class="font-label-md text-label-md tracking-wide">
+          <span class="lang-en">BIS 916 Hallmark Assured • Certified Appraisal</span>
+          <span class="lang-ml hidden">100% ബിഐഎസ് 916 ഹാൾമാർക്ക് ഉറപ്പ് • ഗവൺമെന്റ് അംഗീകൃത മൂല്യനിർണ്ണയം</span>
+        </span>
+      </div>
+      <h1 class="font-display text-headline-lg lg:text-display text-primary font-bold tracking-tight leading-tight">
+        <span class="lang-en">Your Trusted Partner for Gold Financing</span>
+        <span class="lang-ml hidden leading-snug text-[26px] sm:text-[32px] lg:text-[40px]">സ്വർണ്ണ പണയത്തിനും സ്വർണ്ണാഭരണങ്ങൾക്കും വിശ്വസിക്കാൻ കഴിയുന്ന സ്ഥാപനം</span>
+      </h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+        <span class="lang-en">Trusted by Kochi families. We provide fair gold valuations, instant cash to release bank-pledged gold<span class="hidden md:inline">, and beautifully crafted traditional Kerala jewellery.</span></span>
+        <span class="lang-ml hidden">പൂണിത്തുറ, മരട് കേന്ദ്രീകരിച്ച് പതിറ്റാണ്ടുകളുടെ പാരമ്പര്യമുള്ള സുവർണ്ണ സേവനം. കൃത്യമായ പരിശോധന, ബാങ്കുകളിൽ പണയം വച്ച സ്വർണ്ണം തിരിച്ചെടുക്കാൻ ഉടൻ മുൻകൂർ പണം, ഒപ്പം മനസ്സിനിണങ്ങിയ വിവാഹ ആഭരണങ്ങളുടെ നിർമ്മാണം.</span>
+      </p>
+      <div class="flex flex-col sm:flex-row items-center gap-space-md w-full sm:w-auto pt-2">
+  <a class="w-full sm:w-auto flex items-center justify-center gap-2 bg-primary hover:bg-primary-container text-surface-container-lowest px-space-xl py-3.5 rounded-full font-label-lg text-label-lg shadow-lg hover:shadow-xl transition-all" href="#contact">
+    <span class="material-symbols-outlined text-[20px] text-secondary-fixed">phone_in_talk</span>
+    <span>
+      <span class="lang-en">Contact Us / Get Advance</span>
+      <span class="lang-ml hidden">ഞങ്ങളെ ബന്ധപ്പെടുക</span>
+    </span>
+  </a>
+
+  <a class="w-full sm:w-auto flex items-center justify-center gap-2 bg-surface-container-lowest hover:bg-surface-container text-primary px-space-lg py-3.5 rounded-full font-label-lg text-label-lg shadow-md transition-all" href="#rates">
+    <span class="material-symbols-outlined text-[20px] text-secondary">calculate</span>
+    <span>
+      <span class="lang-en">Instant Gold Valuation</span>
+      <span class="lang-ml hidden">സ്വർണ്ണ മൂല്യനിർണ്ണയം</span>
+    </span>
+  </a>
+</div>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full pt-4">
+        <div class="p-3 bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-1">
+          <span class="material-symbols-outlined text-[22px] text-secondary">balance</span>
+          <span class="font-label-sm text-label-sm text-primary font-bold"><span class="lang-en">100% Exact Weight</span><span class="lang-ml hidden">കൃത്യമായ തൂക്കം</span></span>
+          <span class="font-body-sm text-label-sm text-on-surface-variant">Caratometer tested</span>
         </div>
-        <nav
-          class="hidden xl:flex items-center gap-space-lg"
-          data-active-classes="text-secondary-fixed font-bold"
-        >
-          <a
-            aria-current="page"
-            class="transition-colors text-secondary-fixed font-bold"
-            data-path="home"
-            href="#"
-            >Home</a
-          ><a
-            class="font-label-lg text-label-lg text-surface-container-highest hover:text-surface-container-lowest transition-colors"
-            data-path="services"
-            href="#"
-            >Services</a
-          ><a
-            class="font-label-lg text-label-lg text-surface-container-highest hover:text-surface-container-lowest transition-colors"
-            data-path="why-us"
-            href="#"
-            >Why Us</a
-          ><a
-            class="font-label-lg text-label-lg text-surface-container-highest hover:text-surface-container-lowest transition-colors"
-            data-path="rates"
-            href="#"
-            >Rates</a
-          ><a
-            class="font-label-lg text-label-lg text-surface-container-highest hover:text-surface-container-lowest transition-colors"
-            data-path="contact"
-            href="#"
-            >Contact</a
-          >
-        </nav>
-        <div class="flex items-center gap-space-sm">
-          <div
-            class="hidden sm:flex items-center bg-primary-container p-1 rounded-full shadow-inner"
-          >
-            <button
-              class="px-3 py-1 rounded-full bg-secondary text-surface-container-lowest font-label-md text-label-md transition-all shadow-sm"
-              type="button"
-            >
-              EN</button
-            ><button
-              class="px-3 py-1 rounded-full text-surface-container-highest hover:text-surface-container-lowest font-label-md text-label-md transition-all"
-              type="button"
-            >
-              ML
-            </button>
-          </div>
-          <a
-            class="flex items-center gap-space-xs bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container px-space-md py-2.5 rounded-full transition-all shadow-[0_0_16px_rgba(254,214,91,0.25)] hover:shadow-[0_0_20px_rgba(254,214,91,0.45)]"
-            href="tel:+919846052707"
-            ><span class="material-symbols-outlined text-[18px]">call</span
-            ><span
-              class="font-label-md text-label-md tracking-wide hidden md:inline"
-              >Call Now (+91 9846052707)</span
-            ><span class="font-label-md text-label-md md:hidden">Call</span></a
-          >
+        <div class="p-3 bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-1">
+  <span class="material-symbols-outlined text-[22px] text-secondary">map</span>
+  <span class="font-label-sm text-label-sm text-primary font-bold">
+    <span class="lang-en">All Kerala Service</span>
+    <span class="lang-ml hidden">കേരളത്തിലുടനീളം സേവനം</span>
+  </span>
+  <span class="font-body-sm text-label-sm text-on-surface-variant">
+    Service across Kerala
+  </span>
+</div>
+        <div class="p-3 bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-1">
+          <span class="material-symbols-outlined text-[22px] text-secondary">trending_up</span>
+          <span class="font-label-sm text-label-sm text-primary font-bold"><span class="lang-en">Top Market Rate</span><span class="lang-ml hidden">ഉയർന്ന വില</span></span>
+          <span class="font-body-sm text-label-sm text-on-surface-variant">Zero hidden cuts</span>
+        </div>
+        <div class="p-3 bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-1">
+          <span class="material-symbols-outlined text-[22px] text-secondary">handyman</span>
+          <span class="font-label-sm text-label-sm text-primary font-bold"><span class="lang-en">Master Karigars</span><span class="lang-ml hidden">പരമ്പരാഗത പണി</span></span>
+          <span class="font-body-sm text-label-sm text-on-surface-variant">Custom bridal gold</span>
         </div>
       </div>
-    </header>
-    <main class="w-full pt-20 bg-surface">
-      <div class="flex flex-col w-full">
-
-        <!-- Hero Section -->
-        <section
-          class="relative w-full overflow-hidden bg-gradient-to-b from-surface-container-low via-surface to-surface-container-low py-space-xl lg:py-28 px-gutter-mobile lg:px-gutter"
-        >
-          <div
-            class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center"
-          >
-            <!-- Left Content -->
-            <div
-              class="lg:col-span-7 flex flex-col items-start gap-space-md z-10"
-            >
-              <!-- Trust Ribbon Capsule -->
-              <div
-                class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-container text-secondary-fixed shadow-sm"
-              >
-                <span class="material-symbols-outlined text-[18px]"
-                  >verified</span
-                >
-                <span class="font-label-md text-label-md tracking-wide">
-                  <span class="lang-en"
-                    >BIS 916 Hallmark Assured • Certified Appraisal</span
-                  >
-                  <span class="lang-ml hidden"
-                    >100% ബിഐഎസ് 916 ഹാൾമാർക്ക് ഉറപ്പ് • ഗവൺമെന്റ് അംഗീകൃത
-                    മൂല്യനിർണ്ണയം</span
-                  >
-                </span>
-              </div>
-              <!-- Dynamic Headlines -->
-              <h1
-                class="font-display text-headline-lg lg:text-display text-primary font-bold tracking-tight leading-tight"
-              >
-                <span class="lang-en"
-                  >Your Trusted Partner for Gold Financing</span
-                >
-                <span class="lang-ml hidden leading-snug"
-                  >സ്വർണ്ണ പണയത്തിനും സ്വർണ്ണാഭരണങ്ങൾക്കും വിശ്വസിക്കാൻ കഴിയുന്ന
-                  സ്ഥാപനം</span
-                >
-              </h1>
-              <p
-                class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed"
-              >
-                <span class="lang-en"
-                  >Trusted by Kochi families. We provide fair gold valuations, instant cash to release bank-pledged gold<span class="hidden md:inline">, and beautifully crafted traditional Kerala jewellery.</span
-                >
-                <span class="lang-ml hidden"
-                  >പൂണിത്തുറ, മരട് കേന്ദ്രീകരിച്ച് പതിറ്റാണ്ടുകളുടെ
-                  പാരമ്പര്യമുള്ള സുവർണ്ണ സേവനം. കൃത്യമായ പരിശോധന, ബാങ്കുകളിൽ
-                  പണയം വച്ച സ്വർണ്ണം തിരിച്ചെടുക്കാൻ ഉടൻ മുൻകൂർ പണം, ഒപ്പം
-                  മനസ്സിനിണങ്ങിയ വിവാഹ ആഭരണങ്ങളുടെ നിർമ്മാണം.</span
-                >
-              </p>
-              <!-- CTA Action Buttons -->
-              <div
-                class="flex flex-wrap items-center gap-space-md w-full sm:w-auto pt-2"
-              >
-                <a
-                  class="flex-1 sm:flex-none flex items-center justify-center gap-2 bg-primary hover:bg-primary-container text-surface-container-lowest px-space-xl py-3.5 rounded-full font-label-lg text-label-lg shadow-lg hover:shadow-xl transition-all"
-                  href="#contact-section"
-                >
-                  <span
-                    class="material-symbols-outlined text-[20px] text-secondary-fixed"
-                    >phone_in_talk</span
-                  >
-                  <span>
-                    <span class="lang-en">Contact Us / Get Advance</span>
-                    <span class="lang-ml hidden">ഞങ്ങളെ ബന്ധപ്പെടുക</span>
-                  </span>
-                </a>
-                <a
-                  class="flex-1 sm:flex-none flex items-center justify-center gap-2 bg-surface-container-lowest hover:bg-surface-container text-primary px-space-lg py-3.5 rounded-full font-label-lg text-label-lg shadow-md transition-all"
-                  href="#calculator-section"
-                >
-                  <span
-                    class="material-symbols-outlined text-[20px] text-secondary"
-                    >calculate</span
-                  >
-                  <span>
-                    <span class="lang-en">Instant Gold Valuation</span>
-                    <span class="lang-ml hidden">സ്വർണ്ണ മൂല്യനിർണ്ണയം</span>
-                  </span>
-                </a>
-              </div>
-              <!-- 4 Key Mini Highlights -->
-              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full pt-4">
-                <div
-                  class="p-3 bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-1"
-                >
-                  <span
-                    class="material-symbols-outlined text-[22px] text-secondary"
-                    >balance</span
-                  >
-                  <span
-                    class="font-label-sm text-label-sm text-primary font-bold"
-                  >
-                    <span class="lang-en">100% Exact Weight</span>
-                    <span class="lang-ml hidden">കൃത്യമായ തൂക്കം</span>
-                  </span>
-                  <span
-                    class="font-body-sm text-label-sm text-on-surface-variant"
-                    >Caratometer tested</span
-                  >
-                </div>
-                <div
-                  class="p-3 bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-1"
-                >
-                  <span
-                    class="material-symbols-outlined text-[22px] text-secondary"
-                    >payments</span
-                  >
-                  <span
-                    class="font-label-sm text-label-sm text-primary font-bold"
-                  >
-                    <span class="lang-en">Instant Payout</span>
-                    <span class="lang-ml hidden">തൽക്ഷണ പണം</span>
-                  </span>
-                  <span
-                    class="font-body-sm text-label-sm text-on-surface-variant"
-                    >Cash / RTGS / UPI</span
-                  >
-                </div>
-                <div
-                  class="p-3 bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-1"
-                >
-                  <span
-                    class="material-symbols-outlined text-[22px] text-secondary"
-                    >trending_up</span
-                  >
-                  <span
-                    class="font-label-sm text-label-sm text-primary font-bold"
-                  >
-                    <span class="lang-en">Top Market Rate</span>
-                    <span class="lang-ml hidden">ഉയർന്ന വില</span>
-                  </span>
-                  <span
-                    class="font-body-sm text-label-sm text-on-surface-variant"
-                    >Zero hidden cuts</span
-                  >
-                </div>
-                <div
-                  class="p-3 bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-1"
-                >
-                  <span
-                    class="material-symbols-outlined text-[22px] text-secondary"
-                    >handyman</span
-                  >
-                  <span
-                    class="font-label-sm text-label-sm text-primary font-bold"
-                  >
-                    <span class="lang-en">Master Karigars</span>
-                    <span class="lang-ml hidden">പരമ്പരാഗത പണി</span>
-                  </span>
-                  <span
-                    class="font-body-sm text-label-sm text-on-surface-variant"
-                    >Custom bridal gold</span
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- Right Visual Feature -->
-            <div class="lg:col-span-5 relative">
-              <div
-                class="relative rounded-2xl overflow-hidden shadow-2xl bg-primary"
-              >
-                <img
+    </div>
+    <!-- Cover image -->
+    <div class="lg:col-span-5 relative">
+      <div class="relative rounded-2xl overflow-hidden shadow-2xl bg-primary">
+        <img
                   class="w-full h-[440px] lg:h-[500px] object-cover hover:scale-105 transition-transform duration-700"
                   data-alt="Exquisite Kerala traditional gold jewelry including Kasu Mala, antique choker necklace with Goddess Lakshmi motifs, uncut ruby accents, round gold sovereigns, and crafted temple bangles resting on luxurious deep emerald green silk velvet fabric in soft ambient diya lamp lighting."
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD43lxT0VlkajTqHwL__PAVf7H981C_6WK_FwVjBrrEe8kmGhd8v6-hhTthaG6kN5wEKEmAPBFHJv26onP-GrCw3MuG556OHNzTGhKowB2BqWxu5vMy1xdPUcE0K1fEtMUWTXH64WSBsF3e57I6YlE21zyYpR0BxY6keLcw04MEhi_zxVN9kbrHa95VWF3eb4wVu1Ay7k2__rwDwduy6buPj9FK-4p9GXPtvPTX8wLE"
+                  src="IMG/j3.png"
                 />
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent"
-                ></div>
-                <!-- Floating Status Badge inside Image -->
-                <div
-                  class="absolute bottom-4 left-4 right-4 bg-primary/95 backdrop-blur-md p-4 rounded-xl shadow-xl flex items-center justify-between"
-                >
-                  <div class="flex items-center gap-3">
-                    <div
-                      class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-primary font-bold"
-                    >
-                      <span class="material-symbols-outlined text-[20px]"
-                        >diamond</span
-                      >
-                    </div>
-                    <div>
-                      <p
-                        class="font-label-md text-label-md text-surface-container-lowest font-semibold"
-                      >
-                        Poonithura, Kochi Showroom
-                      </p>
-                      <p
-                        class="font-label-sm text-label-sm text-secondary-fixed"
-                      >
-                        Private Gold Appraisal Desk Open Today
-                      </p>
-                    </div>
-                  </div>
-                  <a
-                    class="px-3 py-1.5 rounded-full bg-secondary text-surface-container-lowest font-label-sm text-label-sm font-semibold hover:bg-secondary-fixed-dim transition-colors"
-                    href="tel:+919846052707"
-                    >Call</a
-                  >
-                </div>
-              </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent"></div>
+        <div class="absolute bottom-4 left-4 right-4 bg-primary/95 backdrop-blur-md p-4 rounded-xl shadow-xl flex items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-primary font-bold">
+              <span class="material-symbols-outlined text-[20px]">diamond</span>
+            </div>
+            <div>
+              <p class="font-label-md text-label-md text-surface-container-lowest font-semibold">Poonithura, Kochi Showroom</p>
+              <p class="font-label-sm text-label-sm text-secondary-fixed">Private Gold Appraisal Desk Open Today</p>
             </div>
           </div>
-        </section>
-        <!-- Core Services Grid (4 Pillars) -->
-        <section
-          class="w-full py-space-xl lg:py-24 px-gutter-mobile lg:px-gutter bg-surface"
-          id="services-section"
-        >
-          <div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
-            <!-- Section Title & Malayalam Intro -->
-            <div
-              class="flex flex-col md:flex-row md:items-end justify-between gap-space-md"
-            >
-              <div class="flex flex-col gap-2 max-w-2xl">
-                <div
-                  class="flex items-center gap-2 text-secondary font-label-md text-label-md font-bold tracking-widest uppercase"
-                >
-                  <span class="material-symbols-outlined text-[16px]"
-                    >stars</span
-                  >
-                  <span class="lang-en">Our Core Specializations</span>
-                  <span class="lang-ml hidden">പ്രധാന സേവനങ്ങൾ</span>
-                </div>
-                <h2
-                  class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight"
-                >
-                  <span class="lang-en"
-                    >Institutional Financial Reliability Meets Traditional
-                    Artistry</span
-                  >
-                  <span class="lang-ml hidden"
-                    >വിശ്വസ്തമായ സാമ്പത്തിക സഹായവും പരമ്പരാഗത
-                    സ്വർണ്ണപ്പണിയും</span
-                  >
-                </h2>
-              </div>
-              <p
-                class="font-body-md text-body-md text-on-surface-variant max-w-md"
-              >
-                <span class="lang-en"
-                  >Every transaction is handled privately in our dedicated
-                  consultation counter with computerised density analysis and
-                  instant bank transfers.</span
-                >
-                <span class="lang-ml hidden"
-                  >ഓരോ ഇടപാടും ഏറ്റവും സുതാര്യമായി കമ്പ്യൂട്ടറൈസ്ഡ് ടെസ്റ്റിംഗ്
-                  മുഖേനയും തത്സമയ പണമിടപാടുകളിലൂടെയും ഞങ്ങൾ
-                  നിർവ്വഹിക്കുന്നു.</span
-                >
-              </p>
-            </div>
-            <!-- 4 Cards Bento Grid -->
-            <div
-              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg"
-            >
-              <!-- Card 1: Buying Gold -->
-              <div
-                class="group bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all flex flex-col justify-between"
-              >
-                <div class="flex flex-col gap-space-md">
-                  <div
-                    class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-secondary-fixed transition-colors"
-                  >
-                    <span class="material-symbols-outlined text-[32px]"
-                      >toll</span
-                    >
-                  </div>
-                  <div>
-                    <span
-                      class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider"
-                      >Spot Cash Payout</span
-                    >
-                    <h3
-                      class="font-title-lg text-title-lg text-primary font-bold mt-1"
-                    >
-                      <span class="lang-en">We Buy Gold</span>
-                      <span class="lang-ml hidden"
-                        >സ്വർണ്ണം വിലയ്ക്കെടുക്കുന്നു</span
-                      >
-                    </h3>
-                  </div>
-                  <p
-                    class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
-                  >
-                    <span class="lang-en"
-                      >Unlock highest per-gram spot value for old, broken, or
-                      unused gold ornaments. Assayed right before your eyes with
-                      zero deduction on pure weight.</span
-                    >
-                    <span class="lang-ml hidden"
-                      >നിങ്ങളുടെ പക്കലുള്ള പഴയതോ ഉപയോഗിക്കാത്തതോ ആയ
-                      സ്വർണ്ണാഭരണങ്ങൾക്ക് അന്നത്തെ ഏറ്റവും ഉയർന്ന വിപണി വില നൽകി
-                      ഞങ്ങൾ വാങ്ങുന്നു. കൃത്യമായ തൂക്കവും തൽക്ഷണ
-                      പേയ്‌മെന്റും.</span
-                    >
-                  </p>
-                  <div class="flex flex-col gap-2 pt-2">
-                    <div
-                      class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[16px] text-secondary"
-                        >check_circle</span
-                      >
-                      <span>Zero deduction purity test</span>
-                    </div>
-                    <div
-                      class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[16px] text-secondary"
-                        >check_circle</span
-                      >
-                      <span>Direct IMPS / RTGS / Cash</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="pt-6">
-                  <a
-                    class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-surface-container hover:bg-primary-container hover:text-surface-container-lowest text-primary font-label-md text-label-md font-semibold transition-all"
-                    href="tel:+919846052707"
-                  >
-                    <span>Appraise Gold Now</span>
-                    <span class="material-symbols-outlined text-[16px]"
-                      >arrow_forward</span
-                    >
-                  </a>
-                </div>
-              </div>
-              <!-- Card 2: Advance Funds for Pledged Gold -->
-              <div
-                class="group bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all flex flex-col justify-between"
-              >
-                <div class="flex flex-col gap-space-md">
-                  <div
-                    class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-secondary-fixed transition-colors"
-                  >
-                    <span class="material-symbols-outlined text-[32px]"
-                      >price_check</span
-                    >
-                  </div>
-                  <div>
-                    <span
-                      class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider"
-                      >Bank Release Assistance</span
-                    >
-                    <h3
-                      class="font-title-lg text-title-lg text-primary font-bold mt-1"
-                    >
-                      <span class="lang-en"
-                        >Advance Funds for Pledged Gold</span
-                      >
-                      <span class="lang-ml hidden"
-                        >പണയം വച്ച സ്വർണ്ണം എടുക്കാൻ മുൻകൂർ പണം</span
-                      >
-                    </h3>
-                  </div>
-                  <p
-                    class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
-                  >
-                    <span class="lang-en"
-                      >Unable to clear gold loans in commercial banks or NBFCs?
-                      We advance the full closing capital to release your
-                      ornaments and return you the balance surplus value.</span
-                    >
-                    <span class="lang-ml hidden"
-                      >ബാങ്കുകളിലോ സ്വകാര്യ ധനകാര്യ സ്ഥാപനങ്ങളിലോ പണയം
-                      വച്ചിരിക്കുന്ന സ്വർണ്ണം തിരിച്ചെടുക്കാൻ ആവശ്യമായ തുക
-                      മുൻകൂറായി ഞങ്ങൾ നൽകുന്നു. ബാക്കി വരുന്ന ലാഭത്തുക
-                      നിങ്ങൾക്ക് ഉടൻ ലഭ്യമാക്കുന്നു.</span
-                    >
-                  </p>
-                  <div class="flex flex-col gap-2 pt-2">
-                    <div
-                      class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[16px] text-secondary"
-                        >check_circle</span
-                      >
-                      <span>Immediate bank principal settlement</span>
-                    </div>
-                    <div
-                      class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[16px] text-secondary"
-                        >check_circle</span
-                      >
-                      <span>Retain your surplus equity cash</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="pt-6">
-                  <a
-                    class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-surface-container hover:bg-primary-container hover:text-surface-container-lowest text-primary font-label-md text-label-md font-semibold transition-all"
-                    href="tel:+919946046619"
-                  >
-                    <span>Release My Gold</span>
-                    <span class="material-symbols-outlined text-[16px]"
-                      >arrow_forward</span
-                    >
-                  </a>
-                </div>
-              </div>
-              <!-- Card 3: Gold Loan Transfer & Renewal -->
-              <div
-                class="group bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all flex flex-col justify-between"
-              >
-                <div class="flex flex-col gap-space-md">
-                  <div
-                    class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-secondary-fixed transition-colors"
-                  >
-                    <span class="material-symbols-outlined text-[32px]"
-                      >sync_alt</span
-                    >
-                  </div>
-                  <div>
-                    <span
-                      class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider"
-                      >Interest Burden Reduction</span
-                    >
-                    <h3
-                      class="font-title-lg text-title-lg text-primary font-bold mt-1"
-                    >
-                      <span class="lang-en"
-                        >Gold Loan Transfer &amp; Renewal</span
-                      >
-                      <span class="lang-ml hidden"
-                        >പണയം മാറ്റിവയ്ക്കാനും പുതുക്കാനും സഹായം</span
-                      >
-                    </h3>
-                  </div>
-                  <p
-                    class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
-                  >
-                    <span class="lang-en"
-                      >Stuck with crippling interest rates? We facilitate
-                      seamless transfer of existing pledges to top nationalized
-                      banks offering lowest lending rates with zero
-                      hassle.</span
-                    >
-                    <span class="lang-ml hidden"
-                      >ഉയർന്ന പലിശ നൽകി ബുദ്ധിമുട്ടുന്നവർക്കായി കുറഞ്ഞ പലിശയുള്ള
-                      ബാങ്കുകളിലേക്ക് പണയം മാറ്റിസ്ഥാപിക്കാനും കാലാവധി കഴിഞ്ഞ
-                      പണയങ്ങൾ പുതുക്കാനും വേണ്ട പൂർണ്ണ സഹായം.</span
-                    >
-                  </p>
-                  <div class="flex flex-col gap-2 pt-2">
-                    <div
-                      class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[16px] text-secondary"
-                        >check_circle</span
-                      >
-                      <span>Save on recurring monthly interest</span>
-                    </div>
-                    <div
-                      class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[16px] text-secondary"
-                        >check_circle</span
-                      >
-                      <span>End-to-end documentation guidance</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="pt-6">
-                  <a
-                    class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-surface-container hover:bg-primary-container hover:text-surface-container-lowest text-primary font-label-md text-label-md font-semibold transition-all"
-                    href="tel:+919846052707"
-                  >
-                    <span>Transfer Loan Inquiries</span>
-                    <span class="material-symbols-outlined text-[16px]"
-                      >arrow_forward</span
-                    >
-                  </a>
-                </div>
-              </div>
-              <!-- Card 4: Custom Jewellery Making -->
-              <div
-                class="group bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all flex flex-col justify-between"
-              >
-                <div class="flex flex-col gap-space-md">
-                  <div
-                    class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-secondary-fixed transition-colors"
-                  >
-                    <span class="material-symbols-outlined text-[32px]"
-                      >architecture</span
-                    >
-                  </div>
-                  <div>
-                    <span
-                      class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider"
-                      >Heritage Craftsmanship</span
-                    >
-                    <h3
-                      class="font-title-lg text-title-lg text-primary font-bold mt-1"
-                    >
-                      <span class="lang-en">Custom Jewellery Making</span>
-                      <span class="lang-ml hidden"
-                        >സ്വർണാഭരണങ്ങൾ പണിതു കൊടുക്കുന്നു</span
-                      >
-                    </h3>
-                  </div>
-                  <p
-                    class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
-                  >
-                    <span class="lang-en"
-                      >Bespoke Kerala wedding jewelry manufactured strictly to
-                      your blueprints. Handcrafted Kasu Mala, Nagapadam,
-                      Palakka, lightweight mangalsutras, and bangles.</span
-                    >
-                    <span class="lang-ml hidden"
-                      >നിങ്ങൾ ആഗ്രഹിക്കുന്ന ഡിസൈനിലും ഭാരത്തിലും 100% ബിഐഎസ് 916
-                      ഹാൾമാർക്ക് ചെയ്ത കാശുമാല, പാലക്ക, നാഗപടം, വിവാഹ ആഭരണങ്ങൾ
-                      ഓർഡർ അനുസരിച്ച് നിർമ്മിച്ച് നൽകുന്നു.</span
-                    >
-                  </p>
-                  <div class="flex flex-col gap-2 pt-2">
-                    <div
-                      class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[16px] text-secondary"
-                        >check_circle</span
-                      >
-                      <span>100% 916 BIS Hallmarked Purity</span>
-                    </div>
-                    <div
-                      class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[16px] text-secondary"
-                        >check_circle</span
-                      >
-                      <span>Transparent making charges (പണിക്കൂലി)</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="pt-6">
-                  <a
-                    class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-surface-container hover:bg-primary-container hover:text-surface-container-lowest text-primary font-label-md text-label-md font-semibold transition-all"
-                    href="https://wa.me/919846052707"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <span>Order Custom Design</span>
-                    <span class="material-symbols-outlined text-[16px]"
-                      >arrow_forward</span
-                    >
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Interactive Gold Rate Calculator & Appraisal Widget -->
-        <section
-          class="w-full py-space-xl lg:py-24 px-gutter-mobile lg:px-gutter bg-primary text-surface-container-lowest relative overflow-hidden"
-          id="calculator-section"
-        >
-          <!-- Subtle glow backdrop -->
-          <div
-            class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"
-          ></div>
-          <div
-            class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-primary-container/40 blur-3xl pointer-events-none"
-          ></div>
-          <div
-            class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center relative z-10"
-          >
-            <!-- Calculator Overview & Guidance -->
-            <div class="lg:col-span-5 flex flex-col gap-space-md">
-              <div
-                class="inline-flex items-center gap-2 text-secondary-fixed font-label-md text-label-md font-bold uppercase tracking-wider"
-              >
-                <span class="material-symbols-outlined text-[18px]"
-                  >calculate</span
-                >
-                <span class="lang-en">Live Gold Valuation Calculator</span>
-                <span class="lang-ml hidden"
-                  >തത്സമയ സ്വർണ്ണ മൂല്യ കാൽക്കുലേറ്റർ</span
-                >
-              </div>
-              <h2
-                class="font-headline-lg text-headline-lg font-bold tracking-tight text-surface-container-lowest"
-              >
-                <span class="lang-en"
-                  >Know Exact Worth of Your Gold Before Visiting</span
-                >
-                <span class="lang-ml hidden"
-                  >വരുന്നതിന് മുൻപ് തന്നെ നിങ്ങളുടെ സ്വർണ്ണത്തിന്റെ മൂല്യം
-                  കൃത്യമായി മനസ്സിലാക്കാം</span
-                >
-              </h2>
-              <p
-                class="font-body-md text-body-md text-surface-container-highest/80 leading-relaxed"
-              >
-                <span class="lang-en"
-                  >Enter total gross weight in grams or sovereigns (pavans) to
-                  calculate immediate cash release value at Kochi daily board
-                  rates. No deduction on raw hallmark purity.</span
-                >
-                <span class="lang-ml hidden"
-                  >ഗ്രാമിലോ പവനിലോ നിങ്ങളുടെ കൈവശമുള്ള സ്വർണ്ണത്തിന്റെ അളവ്
-                  രേഖപ്പെടുത്തി ഇന്നത്തെ കൊച്ചി വിപണി നിരക്കിൽ നിങ്ങൾക്ക്
-                  ലഭിക്കുന്ന മൂല്യം കണക്കാക്കൂ.</span
-                >
-              </p>
-              <div
-                class="p-4 rounded-xl bg-primary-container/80 flex flex-col gap-2"
-              >
-                <div
-                  class="flex items-center gap-2 text-secondary-fixed font-label-md text-label-md font-bold"
-                >
-                  <span class="material-symbols-outlined text-[18px]"
-                    >security</span
-                  >
-                  <span>Security Guarantee</span>
-                </div>
-                <p
-                  class="font-body-sm text-body-sm text-surface-container-highest/70"
-                >
-                  Every gram is measured on certified Class-I digital scales
-                  with accuracy up to 0.001g in Poonithura, Kochi.
-                </p>
-              </div>
-            </div>
-            <!-- Live Interactive Calculator Card -->
-            <div
-              class="lg:col-span-7 bg-surface-container-lowest text-on-surface rounded-3xl p-6 lg:p-10 shadow-2xl"
-            >
-              <div class="flex flex-col gap-6">
-                <div class="flex items-center justify-between border-b pb-4">
-                  <div>
-                    <span
-                      class="font-label-sm text-label-sm text-secondary font-bold uppercase"
-                      >Benchmark Reference</span
-                    >
-                    <h3
-                      class="font-title-lg text-title-lg text-primary font-bold"
-                    >
-                      Calculate Instant Gold Payout
-                    </h3>
-                  </div>
-                  <span
-                    class="px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold"
-                    >Market Live</span
-                  >
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <!-- Purity Selector -->
-                  <div class="flex flex-col gap-2">
-                    <label
-                      class="font-label-md text-label-md text-on-surface-variant font-semibold"
-                      >Select Gold Purity (കാരറ്റ്):</label
-                    >
-                    <select
-                      class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-primary font-title-md text-title-md font-semibold focus:outline-none focus:ring-2 focus:ring-secondary"
-                      id="calc-purity"
-                      onchange="calculateGoldValue()"
-                    >
-                      <option selected="" value="6640">
-                        22K (916 Hallmark) - ₹6,640/g
-                      </option>
-                      <option value="7245">
-                        24K (99.9% Fine Bullion) - ₹7,245/g
-                      </option>
-                      <option value="5430">
-                        18K (750 Hallmark) - ₹5,430/g
-                      </option>
-                    </select>
-                  </div>
-                  <!-- Unit Selector -->
-                  <div class="flex flex-col gap-2">
-                    <label
-                      class="font-label-md text-label-md text-on-surface-variant font-semibold"
-                      >Measurement Unit (അളവ്):</label
-                    >
-                    <div
-                      class="grid grid-cols-2 gap-2 h-12 bg-surface-container-low p-1 rounded-xl"
-                    >
-                      <button
-                        class="rounded-lg font-label-md text-label-md font-bold transition-all bg-primary text-surface-container-lowest"
-                        id="unit-grams"
-                        onclick="switchUnit('grams')"
-                        type="button"
-                      >
-                        Grams (ഗ്രാം)
-                      </button>
-                      <button
-                        class="rounded-lg font-label-md text-label-md font-bold transition-all text-on-surface-variant hover:text-primary"
-                        id="unit-pavans"
-                        onclick="switchUnit('pavans')"
-                        type="button"
-                      >
-                        Pavans (പവൻ 8g)
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- Weight Input Slider & Number -->
-                <div class="flex flex-col gap-3">
-                  <div class="flex justify-between items-center">
-                    <label
-                      class="font-label-md text-label-md text-on-surface-variant font-semibold"
-                      id="weight-label"
-                      >Enter Gold Weight (Grams):</label
-                    >
-                    <div
-                      class="flex items-center gap-1 bg-surface-container-low px-3 py-1 rounded-lg"
-                    >
-                      <input
-                        class="w-20 bg-transparent text-right font-headline-md text-headline-md font-bold text-primary focus:outline-none"
-                        id="calc-weight-input"
-                        max="1000"
-                        min="1"
-                        oninput="syncFromInput(this.value)"
-                        step="0.5"
-                        type="number"
-                        value="16"
-                      />
-                      <span
-                        class="font-label-md text-label-md text-secondary font-bold"
-                        id="unit-indicator"
-                        >grams</span
-                      >
-                    </div>
-                  </div>
-                  <input
-                    class="w-full accent-primary h-2 bg-surface-container-high rounded-lg cursor-pointer"
-                    id="calc-slider"
-                    max="100"
-                    min="1"
-                    oninput="syncFromSlider(this.value)"
-                    step="1"
-                    type="range"
-                    value="16"
-                  />
-                  <div
-                    class="flex justify-between text-label-sm text-on-surface-variant"
-                  >
-                    <span>Min: 1g</span>
-                    <span>Common: 8g (1 Pavan)</span>
-                    <span>40g (5 Pavans)</span>
-                    <span>80g (10 Pavans)</span>
-                  </div>
-                </div>
-                <!-- Calculation Result Display Box -->
-                <div
-                  class="p-6 rounded-2xl bg-surface-container flex flex-col md:flex-row items-center justify-between gap-4"
-                >
-                  <div class="flex flex-col">
-                    <span
-                      class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold"
-                      >Estimated Gross Payout Value</span
-                    >
-                    <span
-                      class="font-headline-lg text-headline-lg font-bold text-primary"
-                      id="calc-result"
-                      >₹1,06,240</span
-                    >
-                    <span
-                      class="font-label-sm text-label-sm text-secondary font-medium"
-                      >No testing fee • Direct instant transfer</span
-                    >
-                  </div>
-                  <div class="flex flex-col sm:flex-row gap-2 w-full md:w-auto">
-                    <a
-                      class="flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary text-surface-container-lowest font-label-md text-label-md font-bold hover:bg-primary-container shadow-md transition-all"
-                      href="tel:+919846052707"
-                    >
-                      <span class="material-symbols-outlined text-[18px]"
-                        >verified</span
-                      >
-                      <span>Lock This Rate</span>
-                    </a>
-                    <a
-                      class="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold hover:bg-secondary-fixed transition-all"
-                      href="https://wa.me/919846052707?text=Hello%20Aparna%20Jewellery%2C%20I%20checked%20the%20gold%20rate%20calculator%20for%20my%20ornaments."
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <span class="material-symbols-outlined text-[18px]"
-                        >chat</span
-                      >
-                      <span>WhatsApp</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Why Choose Us / Trust Badges -->
-        <section
-          class="w-full py-space-xl lg:py-24 px-gutter-mobile lg:px-gutter bg-surface-container-low"
-        >
-          <div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
-            <div class="text-center max-w-3xl mx-auto flex flex-col gap-3">
-              <span
-                class="font-label-md text-label-md text-secondary font-bold uppercase tracking-widest"
-              >
-                <span class="lang-en">Generations of Trust in Poonithura</span>
-                <span class="lang-ml hidden"
-                  >പൂണിത്തുറയിലെ പാരമ്പര്യ വിശ്വസ്തത</span
-                >
-              </span>
-              <h2
-                class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight"
-              >
-                <span class="lang-en"
-                  >Why Families Across Kochi Choose Aparna Jewellery</span
-                >
-                <span class="lang-ml hidden"
-                  >എന്തുകൊണ്ട് അപർണ്ണ ജ്വല്ലറി വർക്സ് തിരഞ്ഞെടുക്കണം?</span
-                >
-              </h2>
-              <p class="font-body-md text-body-md text-on-surface-variant">
-                <span class="lang-en"
-                  >Transparent evaluation without misleading carat reductions.
-                  Certified by clients across Ernakulam for decades.</span
-                >
-                <span class="lang-ml hidden"
-                  >ഒരുതരി പോലും കൃത്രിമമില്ലാതെ നേർക്കുനേർ പൂർണ്ണ
-                  സുതാര്യതയോടെയുള്ള സേവനം.</span
-                >
-              </p>
-            </div>
-            <div
-              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md"
-            >
-              <!-- Trust Pillar 1 -->
-              <div
-                class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-sm"
-              >
-                <div
-                  class="w-12 h-12 rounded-xl bg-primary-container text-secondary-fixed flex items-center justify-center"
-                >
-                  <span class="material-symbols-outlined text-[26px]"
-                    >balance</span
-                  >
-                </div>
-                <h3 class="font-title-lg text-title-lg text-primary font-bold">
-                  <span class="lang-en">Digital Caratometer</span>
-                  <span class="lang-ml hidden">ഡിജിറ്റൽ കാരറ്റോമീറ്റർ</span>
-                </h3>
-                <p
-                  class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
-                >
-                  <span class="lang-en"
-                    >Non-destructive XRF electronic purity measurement right in
-                    front of the customer. Exact reading down to 0.01% gold
-                    composition.</span
-                  >
-                  <span class="lang-ml hidden"
-                    >സ്വർണ്ണത്തിന് യാതൊരു കേടുപാടുകളും വരുത്താതെ കൺമുന്നിൽ
-                    വെച്ച് തന്നെ ഡിജിറ്റലായി പരിശോധിച്ച് ശുദ്ധത
-                    തിട്ടപ്പെടുത്തുന്നു.</span
-                  >
-                </p>
-              </div>
-              <!-- Trust Pillar 2 -->
-              <div
-                class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-sm"
-              >
-                <div
-                  class="w-12 h-12 rounded-xl bg-primary-container text-secondary-fixed flex items-center justify-center"
-                >
-                  <span class="material-symbols-outlined text-[26px]"
-                    >handshake</span
-                  >
-                </div>
-                <h3 class="font-title-lg text-title-lg text-primary font-bold">
-                  <span class="lang-en">Direct Local Goodwill</span>
-                  <span class="lang-ml hidden">പ്രാദേശിക വിശ്വാസ്യത</span>
-                </h3>
-                <p
-                  class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
-                >
-                  <span class="lang-en"
-                    >Located permanently in Poonithura, Maradu. Trusted personal
-                    relationships with family accounts running over several
-                    decades.</span
-                  >
-                  <span class="lang-ml hidden"
-                    >പൂണിത്തുറ, മരട് നിവാസികളുടെ എക്കാലത്തെയും വിശ്വസ്ത സ്ഥാപനം.
-                    കൃത്യമായ നിർദ്ദേശങ്ങളും മാർഗ്ഗനിർദ്ദേശങ്ങളും.</span
-                  >
-                </p>
-              </div>
-              <!-- Trust Pillar 3 -->
-              <div
-                class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-sm"
-              >
-                <div
-                  class="w-12 h-12 rounded-xl bg-primary-container text-secondary-fixed flex items-center justify-center"
-                >
-                  <span class="material-symbols-outlined text-[26px]"
-                    >flash_on</span
-                  >
-                </div>
-                <h3 class="font-title-lg text-title-lg text-primary font-bold">
-                  <span class="lang-en">Zero Waiting Settlement</span>
-                  <span class="lang-ml hidden">തൽക്ഷണ സെറ്റിൽമെന്റ്</span>
-                </h3>
-                <p
-                  class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
-                >
-                  <span class="lang-en"
-                    >Whether releasing pledged gold or selling scrap gold, funds
-                    are credited within minutes directly to your bank account or
-                    spot cash.</span
-                  >
-                  <span class="lang-ml hidden"
-                    >കാലതാമസമില്ലാതെ മിനിറ്റുകൾക്കകം തുക ബാങ്ക് അക്കൗണ്ടിലേക്കോ
-                    പണമായോ കൈമാറുന്നു. അനാവശ്യ കാത്തിരിപ്പുകൾ ഇല്ല.</span
-                  >
-                </p>
-              </div>
-              <!-- Trust Pillar 4 -->
-              <div
-                class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-sm"
-              >
-                <div
-                  class="w-12 h-12 rounded-xl bg-primary-container text-secondary-fixed flex items-center justify-center"
-                >
-                  <span class="material-symbols-outlined text-[26px]"
-                    >lock</span
-                  >
-                </div>
-                <h3 class="font-title-lg text-title-lg text-primary font-bold">
-                  <span class="lang-en">Complete Confidentiality</span>
-                  <span class="lang-ml hidden">രഹസ്യസ്വഭാവം</span>
-                </h3>
-                <p
-                  class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
-                >
-                  <span class="lang-en"
-                    >Private appraisal cabin ensuring total dignity, discretion,
-                    and financial confidentiality for all loan and sale
-                    inquiries.</span
-                  >
-                  <span class="lang-ml hidden"
-                    >നിങ്ങളുടെ സാമ്പത്തിക ഇടപാടുകളും വിവരങ്ങളും പൂർണ്ണമായും
-                    രഹസ്യമായി സൂക്ഷിക്കപ്പെടുന്നു. വിശ്വസ്തത ഉറപ്പ്.</span
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Location, Map Guidance & Contact Section -->
-        <section
-          class="w-full py-space-xl lg:py-24 px-gutter-mobile lg:px-gutter bg-surface"
-          id="contact-section"
-        >
-          <div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
-            <!-- Section Title -->
-            <div class="flex flex-col gap-2">
-              <span
-                class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wider"
-              >
-                <span class="lang-en">Visit Our Showroom</span>
-                <span class="lang-ml hidden"
-                  >ഞങ്ങളുടെ സ്ഥാപനത്തിലേക്ക് സ്വാഗതം</span
-                >
-              </span>
-              <h2
-                class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight"
-              >
-                <span class="lang-en"
-                  >Conveniently Located at Poonithura, Kochi</span
-                >
-                <span class="lang-ml hidden">പൂണിത്തുറ, മരട്, എറണാകുളം</span>
-              </h2>
-            </div>
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
-              <!-- Direct Phone & Info Cards -->
-              <div class="lg:col-span-6 flex flex-col gap-space-md">
-                <!-- Primary Click-to-Call Card 1 -->
-                <div
-                  class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
-                >
-                  <div class="flex items-center gap-4">
-                    <div
-                      class="w-12 h-12 rounded-full bg-secondary-container text-primary flex items-center justify-center flex-shrink-0"
-                    >
-                      <span class="material-symbols-outlined text-[24px]"
-                        >call</span
-                      >
-                    </div>
-                    <div>
-                      <span
-                        class="font-label-sm text-label-sm text-on-surface-variant font-semibold"
-                        >Direct Counter Desk</span
-                      >
-                      <p
-                        class="font-title-lg text-title-lg text-primary font-bold"
-                      >
-                        +91 9846052707
-                      </p>
-                      <span
-                        class="font-label-sm text-label-sm text-secondary font-medium"
-                        >Primary Gold Appraisal Hotline</span
-                      >
-                    </div>
-                  </div>
-                  <div class="flex items-center gap-2 w-full sm:w-auto">
-                    <a
-                      class="flex-1 sm:flex-none px-4 py-2 rounded-xl bg-primary text-surface-container-lowest font-label-md text-label-md font-semibold text-center hover:bg-primary-container transition-colors"
-                      href="tel:+919846052707"
-                      >Call</a
-                    >
-                    <a
-                      class="flex-1 sm:flex-none px-4 py-2 rounded-xl bg-surface-container text-primary font-label-md text-label-md font-semibold text-center hover:bg-secondary-container transition-colors"
-                      href="https://wa.me/919846052707"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      >WhatsApp</a
-                    >
-                  </div>
-                </div>
-                <!-- Primary Click-to-Call Card 2 -->
-                <div
-                  class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
-                >
-                  <div class="flex items-center gap-4">
-                    <div
-                      class="w-12 h-12 rounded-full bg-surface-container text-primary flex items-center justify-center flex-shrink-0"
-                    >
-                      <span class="material-symbols-outlined text-[24px]"
-                        >phone_iphone</span
-                      >
-                    </div>
-                    <div>
-                      <span
-                        class="font-label-sm text-label-sm text-on-surface-variant font-semibold"
-                        >Secondary Line / Workshop</span
-                      >
-                      <p
-                        class="font-title-lg text-title-lg text-primary font-bold"
-                      >
-                        +91 9946046619
-                      </p>
-                      <span
-                        class="font-label-sm text-label-sm text-on-surface-variant"
-                        >Custom Jewellery Orders</span
-                      >
-                    </div>
-                  </div>
-                  <div class="flex items-center gap-2 w-full sm:w-auto">
-                    <a
-                      class="flex-1 sm:flex-none px-4 py-2 rounded-xl bg-primary text-surface-container-lowest font-label-md text-label-md font-semibold text-center hover:bg-primary-container transition-colors"
-                      href="tel:+919946046619"
-                      >Call</a
-                    >
-                    <a
-                      class="flex-1 sm:flex-none px-4 py-2 rounded-xl bg-surface-container text-primary font-label-md text-label-md font-semibold text-center hover:bg-secondary-container transition-colors"
-                      href="https://wa.me/919946046619"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      >WhatsApp</a
-                    >
-                  </div>
-                </div>
-                <!-- Working Hours & Landmark Guidance -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
-                  <div
-                    class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-2"
-                  >
-                    <div
-                      class="flex items-center gap-2 text-primary font-title-md text-title-md font-bold"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[20px] text-secondary"
-                        >schedule</span
-                      >
-                      <span>Operating Hours</span>
-                    </div>
-                    <p
-                      class="font-body-sm text-body-sm text-on-surface leading-relaxed"
-                    >
-                      <strong>Mon – Sat:</strong> 9:30 AM – 7:30 PM<br />
-                      <strong>Sunday:</strong> By Prior Appointment
-                    </p>
-                    <span
-                      class="font-label-sm text-label-sm text-secondary font-semibold"
-                      >Instant appraisals walk-ins welcome</span
-                    >
-                  </div>
-                  <div
-                    class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-2"
-                  >
-                    <div
-                      class="flex items-center gap-2 text-primary font-title-md text-title-md font-bold"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[20px] text-secondary"
-                        >near_me</span
-                      >
-                      <span>Landmarks &amp; Transit</span>
-                    </div>
-                    <p
-                      class="font-body-sm text-body-sm text-on-surface leading-relaxed"
-                    >
-                      Close to Petta Metro Station &amp; Maradu Junction.
-                    </p>
-                    <span
-                      class="font-label-sm text-label-sm text-primary font-semibold"
-                      >Dedicated parking available</span
-                    >
-                  </div>
-                </div>
-              </div>
-              <!-- Visual Map Preview & Address Card -->
-              <div class="lg:col-span-6 flex flex-col gap-space-md">
-                <!-- Static Location Pipeline Container -->
-                <div
-                  class="w-full h-72 rounded-2xl bg-cover bg-center shadow-lg relative overflow-hidden group"
-                  data-location="Poonithura, Maradu, Kochi, Kerala, India"
-                  style="
-                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuA5jlUo9qDFBdn9GI9lRgSx1O4E--_X98eW5Ra_ZkVOdRwQulIE-7NlE5BzW6dqd5fUZtZp7Wg3NhHHXDShlY-xkzcSKh9gq-14f82jgWF67rfa5z933AOI0F1wQtJthkn8ORaBNwbKHByvcsqDL8LXHbt8HsxWAfNktDBYrJQE3x43r8U_5QL6o7HLOdd1-ZdAGscAugYJgPkiAVgfOeLq8rp99fo0dCKnrrGyUoJF&quot;);
-                  "
-                >
-                  <div
-                    class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors"
-                  ></div>
-                  <div
-                    class="absolute bottom-4 left-4 right-4 bg-surface-container-lowest/95 backdrop-blur-md p-4 rounded-xl shadow-lg flex items-center justify-between"
-                  >
-                    <div class="flex items-center gap-3">
-                      <span
-                        class="material-symbols-outlined text-error text-[28px]"
-                        >location_on</span
-                      >
-                      <div>
-                        <h4
-                          class="font-label-lg text-label-lg text-primary font-bold"
-                        >
-                          Aparna Jewellery Works
-                        </h4>
-                        <p
-                          class="font-label-sm text-label-sm text-on-surface-variant"
-                        >
-                          Poonithura, Maradu, Ernakulam, Kochi 682038
-                        </p>
-                      </div>
-                    </div>
-                    <a
-                      class="px-4 py-2 rounded-xl bg-primary text-surface-container-lowest font-label-sm text-label-sm font-semibold flex items-center gap-1.5 hover:bg-primary-container shadow transition-all"
-                      href="https://maps.google.com/?q=Poonithura+Maradu+Kochi+Kerala"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <span>Navigate</span>
-                      <span class="material-symbols-outlined text-[16px]"
-                        >directions</span
-                      >
-                    </a>
-                  </div>
-                </div>
-                <!-- Quick Inquiry Card -->
-                <div
-                  class="bg-primary-container text-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4"
-                >
-                  <div class="flex flex-col gap-1 text-center sm:text-left">
-                    <h4
-                      class="font-title-md text-title-md font-bold text-secondary-fixed"
-                    >
-                      <span class="lang-en"
-                        >Need Immediate Bank Gold Release?</span
-                      >
-                      <span class="lang-ml hidden"
-                        >ബാങ്ക് സ്വർണ്ണം ഉടൻ തിരിച്ചെടുക്കണമോ?</span
-                      >
-                    </h4>
-                    <p
-                      class="font-body-sm text-body-sm text-surface-container-highest/80"
-                    >
-                      Speak directly with our senior proprietor for instant
-                      advance fund sanctioning.
-                    </p>
-                  </div>
-                  <a
-                    class="flex-shrink-0 px-6 py-3 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold hover:bg-secondary-fixed shadow-md transition-all"
-                    href="tel:+919846052707"
-                  >
-                    Call (+91 9846052707)
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Bilingual Toggle & Calculator Client Behavior Script -->
-        <script>
-          // Bilingual Language Switching Script
-          function setLanguage(lang) {
-            const enElements = document.querySelectorAll(".lang-en");
-            const mlElements = document.querySelectorAll(".lang-ml");
-            const btnEn = document.getElementById("lang-btn-en");
-            const btnMl = document.getElementById("lang-btn-ml");
-
-            if (lang === "ml") {
-              enElements.forEach((el) => el.classList.add("hidden"));
-              mlElements.forEach((el) => el.classList.remove("hidden"));
-              if (btnEn && btnMl) {
-                btnEn.className =
-                  "px-2.5 py-0.5 rounded-full font-label-sm text-label-sm transition-all text-surface-container-highest hover:text-surface-container-lowest";
-                btnMl.className =
-                  "px-2.5 py-0.5 rounded-full font-label-sm text-label-sm transition-all bg-secondary text-surface-container-lowest font-bold";
-              }
-            } else {
-              mlElements.forEach((el) => el.classList.add("hidden"));
-              enElements.forEach((el) => el.classList.remove("hidden"));
-              if (btnEn && btnMl) {
-                btnEn.className =
-                  "px-2.5 py-0.5 rounded-full font-label-sm text-label-sm transition-all bg-secondary text-surface-container-lowest font-bold";
-                btnMl.className =
-                  "px-2.5 py-0.5 rounded-full font-label-sm text-label-sm transition-all text-surface-container-highest hover:text-surface-container-lowest";
-              }
-            }
-          }
-
-          // Gold Calculator Variables & Logic
-          let currentUnit = "grams";
-
-          function switchUnit(unit) {
-            currentUnit = unit;
-            const btnGrams = document.getElementById("unit-grams");
-            const btnPavans = document.getElementById("unit-pavans");
-            const weightLabel = document.getElementById("weight-label");
-            const unitIndicator = document.getElementById("unit-indicator");
-            const input = document.getElementById("calc-weight-input");
-            const slider = document.getElementById("calc-slider");
-
-            if (unit === "pavans") {
-              btnPavans.className =
-                "rounded-lg font-label-md text-label-md font-bold transition-all bg-primary text-surface-container-lowest";
-              btnGrams.className =
-                "rounded-lg font-label-md text-label-md font-bold transition-all text-on-surface-variant hover:text-primary";
-              weightLabel.innerText = "Enter Gold Weight (Pavans / പവൻ):";
-              unitIndicator.innerText = "pavans";
-              slider.max = "50";
-              input.value = "2";
-              slider.value = "2";
-            } else {
-              btnGrams.className =
-                "rounded-lg font-label-md text-label-md font-bold transition-all bg-primary text-surface-container-lowest";
-              btnPavans.className =
-                "rounded-lg font-label-md text-label-md font-bold transition-all text-on-surface-variant hover:text-primary";
-              weightLabel.innerText = "Enter Gold Weight (Grams / ഗ്രാം):";
-              unitIndicator.innerText = "grams";
-              slider.max = "100";
-              input.value = "16";
-              slider.value = "16";
-            }
-            calculateGoldValue();
-          }
-
-          function syncFromSlider(val) {
-            document.getElementById("calc-weight-input").value = val;
-            calculateGoldValue();
-          }
-
-          function syncFromInput(val) {
-            document.getElementById("calc-slider").value = val;
-            calculateGoldValue();
-          }
-
-          function calculateGoldValue() {
-            const ratePerGram =
-              parseFloat(document.getElementById("calc-purity").value) || 6640;
-            let rawVal =
-              parseFloat(document.getElementById("calc-weight-input").value) ||
-              0;
-
-            let effectiveGrams = rawVal;
-            if (currentUnit === "pavans") {
-              effectiveGrams = rawVal * 8; // 1 Pavan = 8 Grams
-            }
-
-            const totalVal = Math.round(effectiveGrams * ratePerGram);
-            const formatted = new Intl.NumberFormat("en-IN", {
-              style: "currency",
-              currency: "INR",
-              maximumFractionDigits: 0,
-            }).format(totalVal);
-            document.getElementById("calc-result").innerText = formatted;
-          }
-
-          // Initialize initial calculation
-          calculateGoldValue();
-        </script>
-      </div>
-    </main>
-    
-    <footer class="w-full bg-primary text-surface-container-highest">
-      <div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter py-space-xl">
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl"
-        >
-          <div class="flex flex-col gap-space-md">
-            <div class="flex items-center gap-space-sm">
-              <img
-                alt="Aparna Jewellery Works Logo"
-                class="h-8 w-auto object-contain"
-                src="IMG/LOGO.png"
-              />
-              <!-- <span
-                class="font-title-lg text-title-lg text-surface-container-lowest font-bold tracking-tight"
-                >Aparna Jewellery</span
-              > -->
-            </div>
-            <p
-              class="font-body-sm text-body-sm text-surface-container-highest/80 leading-relaxed"
-            >
-             Kerala's trusted destination for custom heritage jewellery and secure gold financing.
-            </p>
-            <div class="flex items-center gap-space-xs text-secondary-fixed">
-              <span class="material-symbols-outlined text-[20px]">verified</span
-              ><span
-                class="font-label-md text-label-md font-semibold tracking-wider uppercase"
-                >100% BIS 916 Hallmark Assured</span
-              >
-            </div>
-          </div>
-          <div class="flex flex-col gap-space-md">
-            <h4
-              class="font-title-md text-title-md text-surface-container-lowest font-semibold"
-            >
-              Contact &amp; Inquiries
-            </h4>
-            <div class="flex flex-col gap-space-sm font-body-sm text-body-sm">
-              <a
-                class="flex items-center gap-space-sm hover:text-secondary-fixed transition-colors"
-                href="tel:+919846052707"
-                ><span
-                  class="material-symbols-outlined text-[18px] text-secondary-fixed"
-                  >phone</span
-                ><span>+91 9846052707</span></a
-              ><a
-                class="flex items-center gap-space-sm hover:text-secondary-fixed transition-colors"
-                href="tel:+919946046619"
-                ><span
-                  class="material-symbols-outlined text-[18px] text-secondary-fixed"
-                  >phone</span
-                ><span>+91 9946046619</span></a
-              >
-              <div class="flex items-center gap-space-sm">
-                <span
-                  class="material-symbols-outlined text-[18px] text-secondary-fixed"
-                  >schedule</span
-                ><span>Mon - Sat: 9:30 AM – 7:30 PM</span>
-              </div>
-              <div class="flex items-center gap-space-sm">
-                <span
-                  class="material-symbols-outlined text-[18px] text-secondary-fixed"
-                  >event_busy</span
-                ><span>Sunday: By Prior Appointment</span>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col gap-space-md">
-            <h4
-              class="font-title-md text-title-md text-surface-container-lowest font-semibold"
-            >
-              Establishment Address
-            </h4>
-            <div
-              class="flex gap-space-sm font-body-sm text-body-sm text-surface-container-highest/90"
-            >
-              <span
-                class="material-symbols-outlined text-[20px] text-secondary-fixed flex-shrink-0 mt-0.5"
-                >location_on</span
-              >
-              <address class="not-italic leading-relaxed">
-                Aparna Jewellery Works<br />Poonithura, Maradu<br />Ernakulam,
-                Kochi<br />Kerala 682038, India
-              </address>
-            </div>
-            <div class="mt-space-xs">
-              <span
-                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-secondary-fixed font-label-sm text-label-sm"
-                ><span class="material-symbols-outlined text-[14px]"
-                  >directions_car</span
-                >Easy Parking Available</span
-              >
-            </div>
-          </div>
-          <div class="flex flex-col gap-space-md">
-            <h4
-              class="font-title-md text-title-md text-surface-container-lowest font-semibold"
-            >
-              Trust &amp; Security Guarantees
-            </h4>
-            <ul
-              class="flex flex-col gap-space-sm font-body-sm text-body-sm text-surface-container-highest/80"
-            >
-              <li class="flex items-start gap-space-xs">
-                <span
-                  class="material-symbols-outlined text-[18px] text-secondary-fixed mt-0.5"
-                  >shield</span
-                ><span>Insured High-Security Vault Storage</span>
-              </li>
-              <li class="flex items-start gap-space-xs">
-                <span
-                  class="material-symbols-outlined text-[18px] text-secondary-fixed mt-0.5"
-                  >balance</span
-                ><span>Certified Electronic Karat Caratometer</span>
-              </li>
-              <li class="flex items-start gap-space-xs">
-                <span
-                  class="material-symbols-outlined text-[18px] text-secondary-fixed mt-0.5"
-                  >receipt_long</span
-                ><span>RBI-Compliant Gold Loan Documentation</span>
-              </li>
-              <li class="flex items-start gap-space-xs">
-                <span
-                  class="material-symbols-outlined text-[18px] text-secondary-fixed mt-0.5"
-                  >handshake</span
-                ><span>Transparent Instant Spot Cash Disbursal</span>
-              </li>
-            </ul>
-          </div>
+          <a class="flex-shrink-0 px-3 py-1.5 rounded-full bg-secondary text-surface-container-lowest font-label-sm text-label-sm font-semibold hover:bg-secondary-fixed-dim transition-colors" href="tel:+919846052707">Call</a>
         </div>
-        <div
-          class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-surface-container-highest/70"
-        >
-          <p>
-            © 2026 Aparna Jewellery Works. All rights reserved.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="w-full py-space-xl lg:py-24 px-gutter-mobile lg:px-gutter bg-surface" id="services-section">
+  <div class="max-w-8xl lg:px-10 mx-auto flex flex-col gap-space-xl">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+      <div class="flex flex-col gap-2 max-w-2xl">
+        <div class="flex items-center gap-2 text-secondary font-label-md text-label-md font-bold tracking-widest uppercase">
+          <span class="material-symbols-outlined text-[16px]">stars</span>
+          <span class="lang-en">Our Core Specializations</span>
+          <span class="lang-ml hidden">പ്രധാന സേവനങ്ങൾ</span>
+        </div>
+        <h2 class="font-headline-lg text-[22px] sm:text-headline-lg text-primary font-bold tracking-tight leading-[1.2] sm:leading-normal">
+  <span class="lang-en">Institutional Financial Reliability Meets Traditional Artistry</span>
+  <span class="lang-ml hidden">വിശ്വസ്തമായ സാമ്പത്തിക സഹായവും പരമ്പരാഗത സ്വർണ്ണപ്പണിയും</span>
+</h2>
+      </div>
+      <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        <span class="lang-en">Every transaction is handled privately in our dedicated consultation counter with computerised density analysis and instant bank transfers.</span>
+        <span class="lang-ml hidden">ഓരോ ഇടപാടും ഏറ്റവും സുതാര്യമായി കമ്പ്യൂട്ടറൈസ്ഡ് ടെസ്റ്റിംഗ് മുഖേനയും തത്സമയ പണമിടപാടുകളിലൂടെയും ഞങ്ങൾ നിർവ്വഹിക്കുന്നു.</span>
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+
+      <!-- Card 1 -->
+      <div class="group bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+        <div class="flex flex-col gap-space-md">
+          <div class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-secondary-fixed transition-colors"><span class="material-symbols-outlined text-[32px]">toll</span></div>
+          <div>
+            <span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Spot Cash Payout</span>
+            <h3 class="font-title-lg text-title-lg text-primary font-bold mt-1"><span class="lang-en">We Buy Gold</span><span class="lang-ml hidden">സ്വർണ്ണം വിലയ്ക്കെടുക്കുന്നു</span></h3>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            <span class="lang-en">Unlock highest per-gram spot value for old, broken, or unused gold ornaments. Assayed right before your eyes with zero deduction on pure weight.</span>
+            <span class="lang-ml hidden">നിങ്ങളുടെ പക്കലുള്ള പഴയതോ ഉപയോഗിക്കാത്തതോ ആയ സ്വർണ്ണാഭരണങ്ങൾക്ക് അന്നത്തെ ഏറ്റവും ഉയർന്ന വിപണി വില നൽകി ഞങ്ങൾ വാങ്ങുന്നു. കൃത്യമായ തൂക്കവും തൽക്ഷണ പേയ്‌മെന്റും.</span>
           </p>
-          <div class="flex items-center gap-space-lg">
-            <span class="font-label-sm text-label-sm text-secondary-fixed"
-              >അപർണ്ണ ജ്വല്ലറി വർക്സ് • കൊച്ചി</span
-            ><span
-              class="hover:text-surface-container-lowest transition-colors cursor-pointer"
-              >Privacy Policy</span
-            ><span
-              class="hover:text-surface-container-lowest transition-colors cursor-pointer"
-              >Terms of Gold Appraisal</span
-            >
+          <div class="flex flex-col gap-2 pt-2">
+            <div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span>Zero deduction purity test</span></div>
+            <div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span>Direct IMPS / RTGS / Cash</span></div>
+          </div>
+        </div>
+        <div class="pt-6">
+          <a class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-surface-container hover:bg-primary-container hover:text-surface-container-lowest text-primary font-label-md text-label-md font-semibold transition-all" href="tel:+919846052707"><span>Appraise Gold Now</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="group bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+        <div class="flex flex-col gap-space-md">
+          <div class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-secondary-fixed transition-colors"><span class="material-symbols-outlined text-[32px]">price_check</span></div>
+          <div>
+            <span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Bank Release Assistance</span>
+            <h3 class="font-title-lg text-title-lg text-primary font-bold mt-1"><span class="lang-en">Advance Funds for Pledged Gold</span><span class="lang-ml hidden">പണയം വച്ച സ്വർണ്ണം എടുക്കാൻ മുൻകൂർ പണം</span></h3>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            <span class="lang-en">Unable to clear gold loans in commercial banks or NBFCs? We advance the full closing capital to release your ornaments and return you the balance surplus value.</span>
+            <span class="lang-ml hidden">ബാങ്കുകളിലോ സ്വകാര്യ ധനകാര്യ സ്ഥാപനങ്ങളിലോ പണയം വച്ചിരിക്കുന്ന സ്വർണ്ണം തിരിച്ചെടുക്കാൻ ആവശ്യമായ തുക മുൻകൂറായി ഞങ്ങൾ നൽകുന്നു. ബാക്കി വരുന്ന ലാഭത്തുക നിങ്ങൾക്ക് ഉടൻ ലഭ്യമാക്കുന്നു.</span>
+          </p>
+          <div class="flex flex-col gap-2 pt-2">
+            <div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span>Immediate bank principal settlement</span></div>
+            <div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span>Retain your surplus equity cash</span></div>
+          </div>
+        </div>
+        <div class="pt-6">
+          <a class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-surface-container hover:bg-primary-container hover:text-surface-container-lowest text-primary font-label-md text-label-md font-semibold transition-all" href="tel:+919946046619"><span>Release My Gold</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="group bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+        <div class="flex flex-col gap-space-md">
+          <div class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-secondary-fixed transition-colors"><span class="material-symbols-outlined text-[32px]">sync_alt</span></div>
+          <div>
+            <span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Interest Burden Reduction</span>
+            <h3 class="font-title-lg text-title-lg text-primary font-bold mt-1"><span class="lang-en">Gold Loan Transfer &amp; Renewal</span><span class="lang-ml hidden">പണയം മാറ്റിവയ്ക്കാനും പുതുക്കാനും സഹായം</span></h3>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            <span class="lang-en">Stuck with crippling interest rates? We facilitate seamless transfer of existing pledges to top nationalized banks offering lowest lending rates with zero hassle.</span>
+            <span class="lang-ml hidden">ഉയർന്ന പലിശ നൽകി ബുദ്ധിമുട്ടുന്നവർക്കായി കുറഞ്ഞ പലിശയുള്ള ബാങ്കുകളിലേക്ക് പണയം മാറ്റിസ്ഥാപിക്കാനും കാലാവധി കഴിഞ്ഞ പണയങ്ങൾ പുതുക്കാനും വേണ്ട പൂർണ്ണ സഹായം.</span>
+          </p>
+          <div class="flex flex-col gap-2 pt-2">
+            <div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span>Save on recurring monthly interest</span></div>
+            <div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span>End-to-end documentation guidance</span></div>
+          </div>
+        </div>
+        <div class="pt-6">
+          <a class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-surface-container hover:bg-primary-container hover:text-surface-container-lowest text-primary font-label-md text-label-md font-semibold transition-all" href="tel:+919846052707"><span>Transfer Loan Inquiries</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="group bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+        <div class="flex flex-col gap-space-md">
+          <div class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-secondary-fixed transition-colors"><span class="material-symbols-outlined text-[32px]">architecture</span></div>
+          <div>
+            <span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Heritage Craftsmanship</span>
+            <h3 class="font-title-lg text-title-lg text-primary font-bold mt-1"><span class="lang-en">Custom Jewellery Making</span><span class="lang-ml hidden">സ്വർണാഭരണങ്ങൾ പണിതു കൊടുക്കുന്നു</span></h3>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            <span class="lang-en">Bespoke Kerala wedding jewelry manufactured strictly to your blueprints. Handcrafted Kasu Mala, Nagapadam, Palakka, lightweight mangalsutras, and bangles.</span>
+            <span class="lang-ml hidden">നിങ്ങൾ ആഗ്രഹിക്കുന്ന ഡിസൈനിലും ഭാരത്തിലും 100% ബിഐഎസ് 916 ഹാൾമാർക്ക് ചെയ്ത കാശുമാല, പാലക്ക, നാഗപടം, വിവാഹ ആഭരണങ്ങൾ ഓർഡർ അനുസരിച്ച് നിർമ്മിച്ച് നൽകുന്നു.</span>
+          </p>
+          <div class="flex flex-col gap-2 pt-2">
+            <div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span>100% 916 BIS Hallmarked Purity</span></div>
+            <div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span>Transparent making charges (പണിക്കൂലി)</span></div>
+          </div>
+        </div>
+        <div class="pt-6">
+          <a class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-surface-container hover:bg-primary-container hover:text-surface-container-lowest text-primary font-label-md text-label-md font-semibold transition-all" href="https://wa.me/919846052707" rel="noopener noreferrer" target="_blank"><span>Order Custom Design</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Calculator -->
+<section class="w-full py-space-xl lg:py-24 px-gutter-mobile lg:px-gutter bg-primary text-surface-container-lowest relative overflow-hidden" id="rates">
+  <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+  <div class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-primary-container/40 blur-3xl pointer-events-none"></div>
+  <div class="max-w-8xl lg:px-10 mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center relative z-10">
+    <div class="lg:col-span-5 flex flex-col gap-space-md">
+      <div class="inline-flex items-center gap-2 text-secondary-fixed font-label-md text-label-md font-bold uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[18px]">calculate</span>
+        <span class="lang-en">Live Gold Valuation Calculator</span>
+        <span class="lang-ml hidden">തത്സമയ സ്വർണ്ണ മൂല്യ കാൽക്കുലേറ്റർ</span>
+      </div>
+      <h2 class="font-headline-lg text-[22px] sm:text-headline-lg font-bold tracking-tight leading-[1.2] sm:leading-normal text-surface-container-lowest">
+  <span class="lang-en">Know Exact Worth of Your Gold Before Visiting</span>
+  <span class="lang-ml hidden">വരുന്നതിന് മുൻപ് തന്നെ നിങ്ങളുടെ സ്വർണ്ണത്തിന്റെ മൂല്യം കൃത്യമായി മനസ്സിലാക്കാം</span>
+</h2>
+      <p class="font-body-md text-body-md text-surface-container-highest/80 leading-relaxed">
+        <span class="lang-en">Enter total gross weight in grams or sovereigns (pavans) to calculate immediate cash release value at Kochi daily board rates. No deduction on raw hallmark purity.</span>
+        <span class="lang-ml hidden">ഗ്രാമിലോ പവനിലോ നിങ്ങളുടെ കൈവശമുള്ള സ്വർണ്ണത്തിന്റെ അളവ് രേഖപ്പെടുത്തി ഇന്നത്തെ കൊച്ചി വിപണി നിരക്കിൽ നിങ്ങൾക്ക് ലഭിക്കുന്ന മൂല്യം കണക്കാക്കൂ.</span>
+      </p>
+      <div class="p-4 rounded-xl bg-primary-container/80 flex flex-col gap-2">
+        <div class="flex items-center gap-2 text-secondary-fixed font-label-md text-label-md font-bold"><span class="material-symbols-outlined text-[18px]">security</span><span>Security Guarantee</span></div>
+        <p class="font-body-sm text-body-sm text-surface-container-highest/70">Every gram is measured on certified Class-I digital scales with accuracy up to 0.001g in Poonithura, Kochi.</p>
+      </div>
+    </div>
+    <div class="lg:col-span-7 bg-surface-container-lowest text-on-surface rounded-3xl p-6 lg:p-10 shadow-2xl">
+      <div class="flex flex-col gap-6">
+        <div class="flex items-center justify-between border-b pb-4">
+          <div>
+            <span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Benchmark Reference</span>
+            <h3 class="font-title-lg text-title-lg text-primary font-bold">Calculate Instant Gold Payout</h3>
+          </div>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-[8px] font-semibold whitespace-nowrap">
+  Market Live
+</span>        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="flex flex-col gap-2">
+            <label class="font-label-md text-label-md text-on-surface-variant font-semibold">Select Gold Purity (കാരറ്റ്):</label>
+            <select class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-primary font-title-md text-title-sm font-semibold focus:outline-none focus:ring-2 focus:ring-secondary" id="calc-purity" onchange="calculateGoldValue()">
+              <option selected value="6640">22K (916 Hallmark) - ₹6,640/g</option>
+              <option value="7245">24K (99.9% Fine Bullion) - ₹7,245/g</option>
+              <option value="5430">18K (750 Hallmark) - ₹5,430/g</option>
+            </select>
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="font-label-md text-label-md text-on-surface-variant font-semibold">Measurement Unit (അളവ്):</label>
+            <div class="grid grid-cols-2 gap-2 h-12 bg-surface-container-low p-1 rounded-xl">
+              <button class="rounded-lg font-label-md text-label-md font-bold transition-all bg-primary text-surface-container-lowest" id="unit-grams" onclick="switchUnit('grams')" type="button">Grams (ഗ്രാം)</button>
+              <button class="rounded-lg font-label-md text-label-md font-bold transition-all text-on-surface-variant hover:text-primary" id="unit-pavans" onclick="switchUnit('pavans')" type="button">Pavans (പവൻ 8g)</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-3">
+          <div class="flex flex-wrap justify-between items-center gap-2">
+            <label class="font-label-md text-label-md text-on-surface-variant font-semibold" id="weight-label">Enter Gold Weight (Grams):</label>
+            <div class="flex items-center gap-1 bg-surface-container-low px-3 py-1 rounded-lg">
+              <input class="w-20 bg-transparent text-right font-headline-md text-headline-md font-bold text-primary focus:outline-none" id="calc-weight-input" max="1000" min="1" oninput="syncFromInput(this.value)" step="0.5" type="number" value="16" />
+              <span class="font-label-md text-label-md text-secondary font-bold" id="unit-indicator">grams</span>
+            </div>
+          </div>
+          <input class="w-full accent-primary h-2 bg-surface-container-high rounded-lg cursor-pointer" id="calc-slider" max="100" min="1" oninput="syncFromSlider(this.value)" step="1" type="range" value="16" />
+          <div class="flex flex-wrap justify-between gap-x-3 gap-y-1 text-label-sm text-on-surface-variant">
+            <span>Min: 1g</span><span>Common: 8g (1 Pavan)</span><span>40g (5 Pavans)</span><span>80g (10 Pavans)</span>
+          </div>
+        </div>
+        <div class="p-6 rounded-2xl bg-surface-container flex flex-col md:flex-row items-center justify-between gap-4">
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Estimated Gross Payout Value</span>
+            <span class="font-headline-lg text-headline-lg font-bold text-primary" id="calc-result">₹1,06,240</span>
+            <span class="font-label-sm text-label-sm text-secondary font-medium">No testing fee • Direct instant transfer</span>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-2 w-full md:w-auto">
+            <a class="flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary text-surface-container-lowest font-label-md text-label-md font-bold hover:bg-primary-container shadow-md transition-all" href="tel:+919846052707"><span class="material-symbols-outlined text-[18px]">verified</span><span>Lock This Rate</span></a>
+            <a class="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold hover:bg-secondary-fixed transition-all" href="https://wa.me/919846052707?text=Hello%20Aparna%20Jewellery%2C%20I%20checked%20the%20gold%20rate%20calculator%20for%20my%20ornaments." rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span>WhatsApp</span></a>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </div>
+</section>
+
+<!-- Why us -->
+<section class="w-full py-space-xl lg:py-24 px-gutter-mobile lg:px-gutter bg-surface-container-low" id="why-us">
+  <div class="max-w-8xl lg:px-10 mx-auto flex flex-col gap-space-xl">
+    <div class="text-center max-w-3xl mx-auto flex flex-col gap-3">
+      <span class="font-label-md text-label-md text-secondary font-bold uppercase tracking-widest">
+        <span class="lang-en">Generations of Trust in Poonithura</span><span class="lang-ml hidden">പൂണിത്തുറയിലെ പാരമ്പര്യ വിശ്വസ്തത</span>
+      </span>
+<h2 class="font-headline-lg text-[22px] sm:text-headline-lg text-primary font-bold tracking-tight leading-[1.2] sm:leading-normal">
+  <span class="lang-en">Why Families Across Kochi Choose Aparna Jewellery</span>
+  <span class="lang-ml hidden">എന്തുകൊണ്ട് അപർണ്ണ ജ്വല്ലറി വർക്സ് തിരഞ്ഞെടുക്കണം?</span>
+</h2>
+      <p class="font-body-md text-body-md text-on-surface-variant">
+        <span class="lang-en">Transparent evaluation without misleading carat reductions. Certified by clients across Ernakulam for decades.</span>
+        <span class="lang-ml hidden">ഒരുതരി പോലും കൃത്രിമമില്ലാതെ നേർക്കുനേർ പൂർണ്ണ സുതാര്യതയോടെയുള്ള സേവനം.</span>
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+      <div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-sm">
+        <div class="w-12 h-12 rounded-xl bg-primary-container text-secondary-fixed flex items-center justify-center"><span class="material-symbols-outlined text-[26px]">balance</span></div>
+        <h3 class="font-title-lg text-title-lg text-primary font-bold"><span class="lang-en">Digital Caratometer</span><span class="lang-ml hidden">ഡിജിറ്റൽ കാരറ്റോമീറ്റർ</span></h3>
+        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          <span class="lang-en">Non-destructive XRF electronic purity measurement right in front of the customer. Exact reading down to 0.01% gold composition.</span>
+          <span class="lang-ml hidden">സ്വർണ്ണത്തിന് യാതൊരു കേടുപാടുകളും വരുത്താതെ കൺമുന്നിൽ വെച്ച് തന്നെ ഡിജിറ്റലായി പരിശോധിച്ച് ശുദ്ധത തിട്ടപ്പെടുത്തുന്നു.</span>
+        </p>
+      </div>
+      <div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-sm">
+        <div class="w-12 h-12 rounded-xl bg-primary-container text-secondary-fixed flex items-center justify-center"><span class="material-symbols-outlined text-[26px]">handshake</span></div>
+        <h3 class="font-title-lg text-title-lg text-primary font-bold"><span class="lang-en">Direct Local Goodwill</span><span class="lang-ml hidden">പ്രാദേശിക വിശ്വാസ്യത</span></h3>
+        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          <span class="lang-en">Located permanently in Poonithura, Maradu. Trusted personal relationships with family accounts running over several decades.</span>
+          <span class="lang-ml hidden">പൂണിത്തുറ, മരട് നിവാസികളുടെ എക്കാലത്തെയും വിശ്വസ്ത സ്ഥാപനം. കൃത്യമായ നിർദ്ദേശങ്ങളും മാർഗ്ഗനിർദ്ദേശങ്ങളും.</span>
+        </p>
+      </div>
+      <div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-sm">
+        <div class="w-12 h-12 rounded-xl bg-primary-container text-secondary-fixed flex items-center justify-center"><span class="material-symbols-outlined text-[26px]">flash_on</span></div>
+        <h3 class="font-title-lg text-title-lg text-primary font-bold"><span class="lang-en">Zero Waiting Settlement</span><span class="lang-ml hidden">തൽക്ഷണ സെറ്റിൽമെന്റ്</span></h3>
+        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          <span class="lang-en">Whether releasing pledged gold or selling scrap gold, funds are credited within minutes directly to your bank account or spot cash.</span>
+          <span class="lang-ml hidden">കാലതാമസമില്ലാതെ മിനിറ്റുകൾക്കകം തുക ബാങ്ക് അക്കൗണ്ടിലേക്കോ പണമായോ കൈമാറുന്നു. അനാവശ്യ കാത്തിരിപ്പുകൾ ഇല്ല.</span>
+        </p>
+      </div>
+      <div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-sm">
+        <div class="w-12 h-12 rounded-xl bg-primary-container text-secondary-fixed flex items-center justify-center"><span class="material-symbols-outlined text-[26px]">lock</span></div>
+        <h3 class="font-title-lg text-title-lg text-primary font-bold"><span class="lang-en">Complete Confidentiality</span><span class="lang-ml hidden">രഹസ്യസ്വഭാവം</span></h3>
+        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          <span class="lang-en">Private appraisal cabin ensuring total dignity, discretion, and financial confidentiality for all loan and sale inquiries.</span>
+          <span class="lang-ml hidden">നിങ്ങളുടെ സാമ്പത്തിക ഇടപാടുകളും വിവരങ്ങളും പൂർണ്ണമായും രഹസ്യമായി സൂക്ഷിക്കപ്പെടുന്നു. വിശ്വസ്തത ഉറപ്പ്.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="w-full py-space-xl lg:py-24 px-gutter-mobile lg:px-gutter bg-surface" id="contact">
+  <div class="max-w-8xl lg:px-10 mx-auto flex flex-col gap-space-xl">
+    <div class="flex flex-col gap-2">
+      <span class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wider"><span class="lang-en">Visit Our Showroom</span><span class="lang-ml hidden">ഞങ്ങളുടെ സ്ഥാപനത്തിലേക്ക് സ്വാഗതം</span></span>
+<h2 class="font-headline-lg text-[22px] sm:text-headline-lg text-primary font-bold tracking-tight leading-[1.2] sm:leading-normal">
+  <span class="lang-en">Conveniently Located at Poonithura, Kochi</span>
+  <span class="lang-ml hidden">പൂണിത്തുറ, മരട്, എറണാകുളം</span>
+</h2>    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+      <div class="lg:col-span-6 flex flex-col gap-space-md">
+        <div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-secondary-container text-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-[24px]">call</span></div>
+            <div>
+              <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Direct Counter Desk</span>
+              <p class="font-title-lg text-title-lg text-primary font-bold">+91 9846052707</p>
+              <span class="font-label-sm text-label-sm text-secondary font-medium">Primary Gold Appraisal Hotline</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 w-full sm:w-auto">
+            <a class="flex-1 sm:flex-none px-4 py-2 rounded-xl bg-primary text-surface-container-lowest font-label-md text-label-md font-semibold text-center hover:bg-primary-container transition-colors" href="tel:+919846052707">Call</a>
+            <a class="flex-1 sm:flex-none px-4 py-2 rounded-xl bg-surface-container text-primary font-label-md text-label-md font-semibold text-center hover:bg-secondary-container transition-colors" href="https://wa.me/919846052707" rel="noopener noreferrer" target="_blank">WhatsApp</a>
+          </div>
+        </div>
+        <div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-surface-container text-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-[24px]">phone_iphone</span></div>
+            <div>
+              <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Secondary Line / Workshop</span>
+              <p class="font-title-lg text-title-lg text-primary font-bold">+91 9946046619</p>
+              <span class="font-label-sm text-label-sm text-on-surface-variant">Custom Jewellery Orders</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 w-full sm:w-auto">
+            <a class="flex-1 sm:flex-none px-4 py-2 rounded-xl bg-primary text-surface-container-lowest font-label-md text-label-md font-semibold text-center hover:bg-primary-container transition-colors" href="tel:+919946046619">Call</a>
+            <a class="flex-1 sm:flex-none px-4 py-2 rounded-xl bg-surface-container text-primary font-label-md text-label-md font-semibold text-center hover:bg-secondary-container transition-colors" href="https://wa.me/919946046619" rel="noopener noreferrer" target="_blank">WhatsApp</a>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+          <div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-2">
+            <div class="flex items-center gap-2 text-primary font-title-md text-title-md font-bold"><span class="material-symbols-outlined text-[20px] text-secondary">schedule</span><span>Operating Hours</span></div>
+            <p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+              <span class="lang-en"><strong>Mon – Sat:</strong> 9:30 AM – 7:30 PM<br /><strong>Sunday:</strong> By Prior Appointment</span>
+              <span class="lang-ml hidden"><strong>തിങ്കൾ – ശനി:</strong> രാവിലെ 9:30 – വൈകിട്ട് 7:30<br /><strong>ഞായർ:</strong> മുൻകൂർ അനുമതിയോടെ</span>
+            </p>
+            <span class="font-label-sm text-label-sm text-secondary font-semibold">Instant appraisals walk-ins welcome</span>
+          </div>
+          <div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-2">
+            <div class="flex items-center gap-2 text-primary font-title-md text-title-md font-bold"><span class="material-symbols-outlined text-[20px] text-secondary">near_me</span><span>Landmarks &amp; Transit</span></div>
+            <p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+              <span class="lang-en">Close to Petta Metro Station &amp; Maradu Junction.</span>
+              <span class="lang-ml hidden">പേട്ട മെട്രോ സ്റ്റേഷനും മരട് ജംഗ്ഷനും സമീപം.</span>
+            </p>
+            <span class="font-label-sm text-label-sm text-primary font-semibold">Dedicated parking available</span>
+          </div>
+        </div>
+      </div>
+      <div class="lg:col-span-6 flex flex-col gap-space-md">
+        <div class="w-full h-72 rounded-2xl shadow-lg relative overflow-hidden bg-surface-container">
+          <iframe title="Aparna Jewellery Works map" class="absolute inset-0 w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Poonithura+Maradu+Kochi+Kerala&amp;output=embed"></iframe>
+          <div class="absolute bottom-4 left-4 right-4 bg-surface-container-lowest/95 backdrop-blur-md p-4 rounded-xl shadow-lg flex items-center justify-between gap-3">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-error text-[28px]">location_on</span>
+              <div>
+                <h4 class="font-label-lg text-label-lg text-primary font-bold">Aparna Jewellery Works</h4>
+                <p class="font-label-sm text-label-sm text-on-surface-variant">Poonithura, Maradu, Ernakulam, Kochi 682038</p>
+              </div>
+            </div>
+            <a class="flex-shrink-0 px-4 py-2 rounded-xl bg-primary text-surface-container-lowest font-label-sm text-label-sm font-semibold flex items-center gap-1.5 hover:bg-primary-container shadow transition-all" href="https://maps.google.com/?q=Poonithura+Maradu+Kochi+Kerala" rel="noopener noreferrer" target="_blank"><span>Navigate</span><span class="material-symbols-outlined text-[16px]">directions</span></a>
+          </div>
+        </div>
+        <div class="bg-primary-container text-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex flex-col gap-1 text-center sm:text-left">
+            <h4 class="font-title-md text-title-md font-bold text-secondary-fixed"><span class="lang-en">Need Immediate Bank Gold Release?</span><span class="lang-ml hidden">ബാങ്ക് സ്വർണ്ണം ഉടൻ തിരിച്ചെടുക്കണമോ?</span></h4>
+            <p class="font-body-sm text-body-sm text-surface-container-highest/80">
+              <span class="lang-en">Speak directly with our senior proprietor for instant advance fund sanctioning.</span>
+              <span class="lang-ml hidden">മുൻകൂർ തുകയ്ക്കായി ഞങ്ങളുടെ സീനിയർ പ്രൊപ്രൈറ്ററോട് നേരിട്ട് സംസാരിക്കൂ.</span>
+            </p>
+          </div>
+          <a class="flex-shrink-0 px-6 py-3 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold hover:bg-secondary-fixed shadow-md transition-all" href="tel:+919846052707">Call (+91 9846052707)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+</main>
+
+<footer class="w-full bg-primary text-surface-container-highest">
+  <div class="max-w-8xl lg:mx-10 px-gutter-mobile lg:px-gutter py-space-xl">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl">
+      <div class="flex flex-col gap-space-md">
+        <div class="flex items-center gap-space-sm"><img alt="Aparna Jewellery Works Logo" class="h-8 w-auto object-contain" src="IMG/LOGO.png" /></div>
+        <p class="font-body-sm text-body-sm text-surface-container-highest/80 leading-relaxed">
+          <span>Kerala's trusted destination for custom heritage jewellery and secure gold financing.</span>
+          <!-- <span class="lang-ml hidden">പരമ്പരാഗത ആഭരണ നിർമ്മാണത്തിനും സുരക്ഷിത സ്വർണ്ണ ധനസഹായത്തിനും കേരളത്തിന്റെ വിശ്വസ്ത സ്ഥാപനം.</span> -->
+        </p>
+        <div class="flex items-center gap-space-xs text-secondary-fixed">
+          <span class="material-symbols-outlined text-[20px]">verified</span>
+          <span class="font-label-md text-label-md font-semibold tracking-wider uppercase">100% BIS 916 Hallmark Assured</span>
+        </div>
+      </div>
+      <div class="flex flex-col gap-space-md">
+        <h4 class="font-title-md text-title-md text-surface-container-lowest font-semibold">Contact &amp; Inquiries</h4>
+        <div class="flex flex-col gap-space-sm font-body-sm text-body-sm">
+          <a class="flex items-center gap-space-sm hover:text-secondary-fixed transition-colors" href="tel:+919846052707"><span class="material-symbols-outlined text-[18px] text-secondary-fixed">phone</span><span>+91 9846052707</span></a>
+          <a class="flex items-center gap-space-sm hover:text-secondary-fixed transition-colors" href="tel:+919946046619"><span class="material-symbols-outlined text-[18px] text-secondary-fixed">phone</span><span>+91 9946046619</span></a>
+          <div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary-fixed">schedule</span><span>Mon - Sat: 9:30 AM – 7:30 PM</span></div>
+          <div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary-fixed">event_busy</span><span>Sunday: By Prior Appointment</span></div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-space-md">
+        <h4 class="font-title-md text-title-md text-surface-container-lowest font-semibold">Establishment Address</h4>
+        <div class="flex gap-space-sm font-body-sm text-body-sm text-surface-container-highest/90">
+          <span class="material-symbols-outlined text-[20px] text-secondary-fixed flex-shrink-0 mt-0.5">location_on</span>
+          <address class="not-italic leading-relaxed">Aparna Jewellery Works<br />Poonithura, Maradu<br />Ernakulam, Kochi<br />Kerala 682038, India</address>
+        </div>
+        <div class="mt-space-xs">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-secondary-fixed font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">directions_car</span><span>Easy Parking Available</span></span>
+        </div>
+      </div>
+      <div class="flex flex-col gap-space-md">
+        <h4 class="font-title-md text-title-md text-surface-container-lowest font-semibold">Trust &amp; Security Guarantees</h4>
+        <ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-surface-container-highest/80">
+          <li class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary-fixed mt-0.5">shield</span><span>Insured High-Security Vault Storage</span></li>
+          <li class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary-fixed mt-0.5">balance</span><span>Certified Electronic Karat Caratometer</span></li>
+          <li class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary-fixed mt-0.5">receipt_long</span><span>RBI-Compliant Gold Loan Documentation</span></li>
+          <li class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary-fixed mt-0.5">handshake</span><span>Transparent Instant Spot Cash Disbursal</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-surface-container-highest/70">
+      <p>© 2026 Aparna Jewellery Works. All rights reserved.</p>
+      <div class="flex flex-wrap items-center justify-center gap-x-space-lg gap-y-2">
+        <span class="font-label-sm text-label-sm text-secondary-fixed">അപർണ്ണ ജ്വല്ലറി വർക്സ് • കൊച്ചി</span>
+        <span class="hover:text-surface-container-lowest transition-colors cursor-pointer">Privacy Policy</span>
+        <span class="hover:text-surface-container-lowest transition-colors cursor-pointer">Terms of Gold Appraisal</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ---------- Malayalam dictionary for plain-text labels ----------
+const ML = {
+
+  "Caratometer tested": "കാരറ്റോമീറ്റർ പരിശോധിച്ചത്",
+  "Cash / RTGS / UPI": "പണം / RTGS / UPI",
+  "Zero hidden cuts": "ഒളിഞ്ഞിരിക്കുന്ന കിഴിവുകളില്ല",
+  "Custom bridal gold": "വിവാഹ സ്വർണ്ണാഭരണങ്ങൾ",
+  "Spot Cash Payout": "തൽക്ഷണ പണം",
+  "Bank Release Assistance": "ബാങ്ക് പണയം തിരിച്ചെടുക്കൽ സഹായം",
+  "Interest Burden Reduction": "പലിശഭാരം കുറയ്ക്കാം",
+  "Heritage Craftsmanship": "പരമ്പരാഗത കരകൗശലം",
+  "Appraise Gold Now": "ഇപ്പോൾ സ്വർണ്ണം പരിശോധിക്കൂ",
+  "Release My Gold": "എന്റെ സ്വർണ്ണം തിരിച്ചെടുക്കൂ",
+  "Transfer Loan Inquiries": "പണയം മാറ്റാൻ അന്വേഷിക്കൂ",
+  "Order Custom Design": "ഇഷ്ടമുള്ള ഡിസൈൻ ഓർഡർ ചെയ്യൂ",
+  "Zero deduction purity test": "കിഴിവില്ലാത്ത ശുദ്ധത പരിശോധന",
+  "Direct IMPS / RTGS / Cash": "നേരിട്ട് IMPS / RTGS / പണം",
+  "Immediate bank principal settlement": "ബാങ്കിലെ മുതൽ തുക ഉടൻ അടയ്ക്കുന്നു",
+  "Retain your surplus equity cash": "ബാക്കി തുക നിങ്ങൾക്ക് ലഭിക്കും",
+  "Save on recurring monthly interest": "പ്രതിമാസ പലിശയിൽ ലാഭം",
+  "End-to-end documentation guidance": "രേഖകൾ തയ്യാറാക്കാൻ പൂർണ്ണ സഹായം",
+  "100% 916 BIS Hallmarked Purity": "100% 916 ബിഐഎസ് ഹാൾമാർക്ക് ശുദ്ധത",
+  "Transparent making charges (പണിക്കൂലി)": "സുതാര്യമായ പണിക്കൂലി",
+  "Security Guarantee": "സുരക്ഷാ ഉറപ്പ്",
+  "Every gram is measured on certified Class-I digital scales with accuracy up to 0.001g in Poonithura, Kochi.": "പൂണിത്തുറയിൽ സർട്ടിഫൈഡ് ക്ലാസ്-I ഡിജിറ്റൽ ത്രാസിൽ 0.001 ഗ്രാം വരെ കൃത്യമായി തൂക്കം നോക്കുന്നു.",
+  "Benchmark Reference": "അടിസ്ഥാന നിരക്ക്",
+  "Calculate Instant Gold Payout": "സ്വർണ്ണത്തിന്റെ തൽക്ഷണ മൂല്യം കണക്കാക്കൂ",
+  "Market Live": "തത്സമയ നിരക്ക്",
+  "Estimated Gross Payout Value": "ഏകദേശ ആകെ മൂല്യം",
+  "No testing fee • Direct instant transfer": "പരിശോധനാ ഫീസില്ല • നേരിട്ടുള്ള തൽക്ഷണ കൈമാറ്റം",
+  // "Lock This Rate": "ഈ നിരക്ക് ഉറപ്പിക്കൂ",
+  // "WhatsApp": "വാട്സ്ആപ്പ്",
+  "Min: 1g": "കുറഞ്ഞത്: 1g", "Common: 8g (1 Pavan)": "സാധാരണ: 8g (1 പവൻ)", "40g (5 Pavans)": "40g (5 പവൻ)", "80g (10 Pavans)": "80g (10 പവൻ)",
+  "Direct Counter Desk": "നേരിട്ടുള്ള കൗണ്ടർ",
+  "Primary Gold Appraisal Hotline": "സ്വർണ്ണ പരിശോധനാ ഹോട്ട്‌ലൈൻ",
+  "Secondary Line / Workshop": "രണ്ടാമത്തെ നമ്പർ / വർക്ക്ഷോപ്പ്",
+  "Custom Jewellery Orders": "ആഭരണ ഓർഡറുകൾ",
+  "Operating Hours": "പ്രവർത്തന സമയം",
+  "Instant appraisals walk-ins welcome": "നേരിട്ട് വരുന്നവർക്കും സ്വാഗതം",
+  "Landmarks & Transit": "സമീപ സ്ഥലങ്ങൾ",
+  "Dedicated parking available": "പാർക്കിംഗ് സൗകര്യമുണ്ട്",
+  "Navigate": "വഴി കാണിക്കൂ",
+  // "Contact & Inquiries": "ബന്ധപ്പെടാൻ",
+  // "Establishment Address": "സ്ഥാപനത്തിന്റെ വിലാസം",
+  // "Trust & Security Guarantees": "വിശ്വാസവും സുരക്ഷയും",
+  // "Mon - Sat: 9:30 AM – 7:30 PM": "തിങ്കൾ – ശനി: രാവിലെ 9:30 – വൈകിട്ട് 7:30",
+  // "Sunday: By Prior Appointment": "ഞായർ: മുൻകൂർ അനുമതിയോടെ",
+  // "Easy Parking Available": "പാർക്കിംഗ് സൗകര്യം",
+  // "100% BIS 916 Hallmark Assured": "100% ബിഐഎസ് 916 ഹാൾമാർക്ക് ഉറപ്പ്",
+  // "Insured High-Security Vault Storage": "ഇൻഷുർ ചെയ്ത ഉയർന്ന സുരക്ഷാ വോൾട്ട്",
+  // "Certified Electronic Karat Caratometer": "സർട്ടിഫൈഡ് ഇലക്ട്രോണിക് കാരറ്റോമീറ്റർ",
+  // "RBI-Compliant Gold Loan Documentation": "RBI മാനദണ്ഡപ്രകാരമുള്ള ഗോൾഡ് ലോൺ രേഖകൾ",
+  // "Transparent Instant Spot Cash Disbursal": "സുതാര്യമായ തൽക്ഷണ പണം കൈമാറ്റം",
+  // "© 2026 Aparna Jewellery Works. All rights reserved.": "© 2026 അപർണ്ണ ജ്വല്ലറി വർക്സ്. എല്ലാ അവകാശങ്ങളും നിക്ഷിപ്തം.",
+  // "Privacy Policy": "സ്വകാര്യതാ നയം",
+  // "Terms of Gold Appraisal": "സ്വർണ്ണ പരിശോധനാ നിബന്ധനകൾ"
+};
+
+const BTN_ON  = "px-3 py-1 rounded-full bg-secondary text-surface-container-lowest font-label-md text-label-md transition-all shadow-sm";
+const BTN_OFF = "px-3 py-1 rounded-full text-surface-container-highest hover:text-surface-container-lowest font-label-md text-label-md transition-all";
+const norm = (s) => s.replace(/\s+/g, " ").trim();
+
+function setLanguage(lang) {
+  document.documentElement.lang = lang;
+  document.querySelectorAll(".lang-en").forEach((el) => el.classList.toggle("hidden", lang === "ml"));
+  document.querySelectorAll(".lang-ml").forEach((el) => el.classList.toggle("hidden", lang !== "ml"));
+
+  // Translate remaining plain-text labels using the dictionary
+  document.querySelectorAll("body *").forEach((el) => {
+    if (el.children.length || ["SCRIPT", "STYLE", "OPTION"].includes(el.tagName)) return;
+    if (el.dataset.en === undefined) {
+      if (!ML[norm(el.textContent)]) return;
+      el.dataset.en = el.textContent;
+    }
+    el.textContent = lang === "ml" ? ML[norm(el.dataset.en)] : el.dataset.en;
+  });
+
+  document.getElementById("lang-btn-en").className = lang === "ml" ? BTN_OFF : BTN_ON;
+  document.getElementById("lang-btn-ml").className = lang === "ml" ? BTN_ON : BTN_OFF;
+  try { localStorage.setItem("lang", lang); } catch (e) {}
+}
+
+// ---------- Gold calculator ----------
+let currentUnit = "grams";
+
+function switchUnit(unit) {
+  currentUnit = unit;
+  const btnGrams = document.getElementById("unit-grams");
+  const btnPavans = document.getElementById("unit-pavans");
+  const weightLabel = document.getElementById("weight-label");
+  const unitIndicator = document.getElementById("unit-indicator");
+  const input = document.getElementById("calc-weight-input");
+  const slider = document.getElementById("calc-slider");
+  const on = "rounded-lg font-label-md text-label-md font-bold transition-all bg-primary text-surface-container-lowest";
+  const off = "rounded-lg font-label-md text-label-md font-bold transition-all text-on-surface-variant hover:text-primary";
+
+  if (unit === "pavans") {
+    btnPavans.className = on; btnGrams.className = off;
+    weightLabel.innerText = "Enter Gold Weight (Pavans / പവൻ):";
+    unitIndicator.innerText = "pavans";
+    slider.max = "50"; input.value = "2"; slider.value = "2";
+  } else {
+    btnGrams.className = on; btnPavans.className = off;
+    weightLabel.innerText = "Enter Gold Weight (Grams / ഗ്രാം):";
+    unitIndicator.innerText = "grams";
+    slider.max = "100"; input.value = "16"; slider.value = "16";
+  }
+  calculateGoldValue();
+}
+
+function syncFromSlider(val) { document.getElementById("calc-weight-input").value = val; calculateGoldValue(); }
+function syncFromInput(val) { document.getElementById("calc-slider").value = val; calculateGoldValue(); }
+
+function calculateGoldValue() {
+  const ratePerGram = parseFloat(document.getElementById("calc-purity").value) || 6640;
+  const rawVal = parseFloat(document.getElementById("calc-weight-input").value) || 0;
+  const effectiveGrams = currentUnit === "pavans" ? rawVal * 8 : rawVal; // 1 Pavan = 8 g
+  const totalVal = Math.round(effectiveGrams * ratePerGram);
+  document.getElementById("calc-result").innerText = new Intl.NumberFormat("en-IN", {
+    style: "currency", currency: "INR", maximumFractionDigits: 0,
+  }).format(totalVal);
+}
+
+calculateGoldValue();
+
+// Remember the visitor's language choice
+try { setLanguage(localStorage.getItem("lang") || "en"); } catch (e) { setLanguage("en"); }
+
+// ---------- Active nav link (desktop navbar + mobile menu) ----------
+const navLinks = Array.from(document.querySelectorAll("header nav a"));
+const desktopLinks = Array.from(document.querySelectorAll("header > div:first-child nav a"));
+
+function setActiveNav() {
+  const y = window.scrollY + 120;
+  let currentHref = "#";
+  let best = -1;
+
+  desktopLinks.forEach((a) => {
+    const id = a.getAttribute("href");
+    if (!id || id.length < 2) return;              // skip Home ("#")
+    const sec = document.querySelector(id);
+    if (!sec) return;
+    const top = sec.getBoundingClientRect().top + window.scrollY;
+    if (top <= y && top > best) { best = top; currentHref = id; }
+  });
+
+  if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) {
+    currentHref = desktopLinks[desktopLinks.length - 1].getAttribute("href");   // bottom of page = Contact
+  }
+
+  navLinks.forEach((a) => {
+    const on = a.getAttribute("href") === currentHref;
+    a.classList.toggle("text-secondary-fixed", on);
+    a.classList.toggle("font-bold", on);
+    a.classList.toggle("text-surface-container-highest", !on);
+  });
+}
+
+window.addEventListener("scroll", setActiveNav, { passive: true });
+window.addEventListener("resize", setActiveNav);
+setActiveNav();
+
+// ---------- Hamburger menu ----------
+const menuBtn  = document.getElementById("menu-btn");
+const menuBox  = document.getElementById("mobile-menu");
+const menuIcon = document.getElementById("menu-icon");
+
+function toggleMenu(open) {
+  const show = open === undefined ? !menuBox.classList.contains("open") : open;
+  menuBox.classList.toggle("open", show);
+  menuIcon.textContent = show ? "close" : "menu";
+  menuBtn.setAttribute("aria-expanded", show);
+}
+
+menuBtn.addEventListener("click", () => toggleMenu());
+
+// close the menu after tapping a link
+menuBox.querySelectorAll("a").forEach((a) =>
+  a.addEventListener("click", () => toggleMenu(false))
+);
+
+// close the menu if the screen becomes large
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 1024) toggleMenu(false);
+});
+</script>
+</body>
 </html>
