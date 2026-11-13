@@ -10,8 +10,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
 <style>
   @layer base {
-    html { scroll-padding-top: 50px; }
-    html, body { margin: 0; padding: 0; }
+html { scroll-padding-top: 80px; }
+@media (min-width: 1024px) {
+  html { scroll-padding-top: 90px; }
+} 
+   html, body { margin: 0; padding: 0; }
     body { overscroll-behavior: none; }
     main > :first-child { margin-top: 0 !important; }
     main > :last-child { margin-bottom: 0 !important; }
@@ -744,6 +747,27 @@ tailwind.config = {
 </footer>
 
 <script>
+
+
+// ---------- Hamburger menu (put this FIRST) ----------
+const menuBtn  = document.getElementById("menu-btn");
+const menuBox  = document.getElementById("mobile-menu");
+const menuIcon = document.getElementById("menu-icon");
+
+function toggleMenu(open) {
+  const show = open === undefined ? !menuBox.classList.contains("open") : open;
+  menuBox.classList.toggle("open", show);
+  menuIcon.textContent = show ? "close" : "menu";
+  menuBtn.setAttribute("aria-expanded", show);
+}
+
+menuBtn.addEventListener("click", () => toggleMenu());
+menuBox.querySelectorAll("a").forEach((a) =>
+  a.addEventListener("click", () => toggleMenu(false))
+);
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 1024) toggleMenu(false);
+});
 // ---------- Malayalam dictionary for plain-text labels ----------
 const ML = {
 
@@ -827,48 +851,48 @@ function setLanguage(lang) {
   try { localStorage.setItem("lang", lang); } catch (e) {}
 }
 
-// ---------- Gold calculator ----------
-let currentUnit = "grams";
+// // ---------- Gold calculator ----------
+// let currentUnit = "grams";
 
-function switchUnit(unit) {
-  currentUnit = unit;
-  const btnGrams = document.getElementById("unit-grams");
-  const btnPavans = document.getElementById("unit-pavans");
-  const weightLabel = document.getElementById("weight-label");
-  const unitIndicator = document.getElementById("unit-indicator");
-  const input = document.getElementById("calc-weight-input");
-  const slider = document.getElementById("calc-slider");
-  const on = "rounded-lg font-label-md text-label-md font-bold transition-all bg-primary text-surface-container-lowest";
-  const off = "rounded-lg font-label-md text-label-md font-bold transition-all text-on-surface-variant hover:text-primary";
+// function switchUnit(unit) {
+//   currentUnit = unit;
+//   const btnGrams = document.getElementById("unit-grams");
+//   const btnPavans = document.getElementById("unit-pavans");
+//   const weightLabel = document.getElementById("weight-label");
+//   const unitIndicator = document.getElementById("unit-indicator");
+//   const input = document.getElementById("calc-weight-input");
+//   const slider = document.getElementById("calc-slider");
+//   const on = "rounded-lg font-label-md text-label-md font-bold transition-all bg-primary text-surface-container-lowest";
+//   const off = "rounded-lg font-label-md text-label-md font-bold transition-all text-on-surface-variant hover:text-primary";
 
-  if (unit === "pavans") {
-    btnPavans.className = on; btnGrams.className = off;
-    weightLabel.innerText = "Enter Gold Weight (Pavans / പവൻ):";
-    unitIndicator.innerText = "pavans";
-    slider.max = "50"; input.value = "2"; slider.value = "2";
-  } else {
-    btnGrams.className = on; btnPavans.className = off;
-    weightLabel.innerText = "Enter Gold Weight (Grams / ഗ്രാം):";
-    unitIndicator.innerText = "grams";
-    slider.max = "100"; input.value = "16"; slider.value = "16";
-  }
-  calculateGoldValue();
-}
+//   if (unit === "pavans") {
+//     btnPavans.className = on; btnGrams.className = off;
+//     weightLabel.innerText = "Enter Gold Weight (Pavans / പവൻ):";
+//     unitIndicator.innerText = "pavans";
+//     slider.max = "50"; input.value = "2"; slider.value = "2";
+//   } else {
+//     btnGrams.className = on; btnPavans.className = off;
+//     weightLabel.innerText = "Enter Gold Weight (Grams / ഗ്രാം):";
+//     unitIndicator.innerText = "grams";
+//     slider.max = "100"; input.value = "16"; slider.value = "16";
+//   }
+//   calculateGoldValue();
+// }
 
-function syncFromSlider(val) { document.getElementById("calc-weight-input").value = val; calculateGoldValue(); }
-function syncFromInput(val) { document.getElementById("calc-slider").value = val; calculateGoldValue(); }
+// function syncFromSlider(val) { document.getElementById("calc-weight-input").value = val; calculateGoldValue(); }
+// function syncFromInput(val) { document.getElementById("calc-slider").value = val; calculateGoldValue(); }
 
-function calculateGoldValue() {
-  const ratePerGram = parseFloat(document.getElementById("calc-purity").value) || 6640;
-  const rawVal = parseFloat(document.getElementById("calc-weight-input").value) || 0;
-  const effectiveGrams = currentUnit === "pavans" ? rawVal * 8 : rawVal; // 1 Pavan = 8 g
-  const totalVal = Math.round(effectiveGrams * ratePerGram);
-  document.getElementById("calc-result").innerText = new Intl.NumberFormat("en-IN", {
-    style: "currency", currency: "INR", maximumFractionDigits: 0,
-  }).format(totalVal);
-}
+// function calculateGoldValue() {
+//   const ratePerGram = parseFloat(document.getElementById("calc-purity").value) || 6640;
+//   const rawVal = parseFloat(document.getElementById("calc-weight-input").value) || 0;
+//   const effectiveGrams = currentUnit === "pavans" ? rawVal * 8 : rawVal; // 1 Pavan = 8 g
+//   const totalVal = Math.round(effectiveGrams * ratePerGram);
+//   document.getElementById("calc-result").innerText = new Intl.NumberFormat("en-IN", {
+//     style: "currency", currency: "INR", maximumFractionDigits: 0,
+//   }).format(totalVal);
+// }
 
-calculateGoldValue();
+// calculateGoldValue();
 
 // Remember the visitor's language choice
 try { setLanguage(localStorage.getItem("lang") || "en"); } catch (e) { setLanguage("en"); }
@@ -907,29 +931,6 @@ window.addEventListener("scroll", setActiveNav, { passive: true });
 window.addEventListener("resize", setActiveNav);
 setActiveNav();
 
-// ---------- Hamburger menu ----------
-const menuBtn  = document.getElementById("menu-btn");
-const menuBox  = document.getElementById("mobile-menu");
-const menuIcon = document.getElementById("menu-icon");
-
-function toggleMenu(open) {
-  const show = open === undefined ? !menuBox.classList.contains("open") : open;
-  menuBox.classList.toggle("open", show);
-  menuIcon.textContent = show ? "close" : "menu";
-  menuBtn.setAttribute("aria-expanded", show);
-}
-
-menuBtn.addEventListener("click", () => toggleMenu());
-
-// close the menu after tapping a link
-menuBox.querySelectorAll("a").forEach((a) =>
-  a.addEventListener("click", () => toggleMenu(false))
-);
-
-// close the menu if the screen becomes large
-window.addEventListener("resize", () => {
-  if (window.innerWidth >= 1024) toggleMenu(false);
-});
 </script>
 </body>
 </html>
